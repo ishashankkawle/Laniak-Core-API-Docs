@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>laniak-core-api · Anypoint Studio Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <link href="assets/prettify.css" rel="stylesheet">
+    <link href="assets/scroller.css" rel="stylesheet">
+
+  </head>
+
+  <body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar"><iframe style="display: none;" id="rufous-sandbox" name="uid13460061790411"></iframe>
+
+    <!-- Navbar
+    ================================================== -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand pull-left" href="#">laniak-core-api</a>
+          <p class="navbar-text pull-right">
+              <a href="http://www.mulesoft.com" class="navbar-link">
+                <img src="./assets/images/mulesoft-logo-final.png" alt="MuleSoft" id="mulesoftlogo">
+              </a>
+          </p>
+          <div class="scroller scroller-left"><img src="./assets/icons/glyphicons_chevron-left.png" alt="scrollLeft"></div>
+          <div class="scroller scroller-right"><img src="./assets/icons/glyphicons_chevron-right.png" alt="scrollRight"></div>
+          <div class="wrapper">
+            <ul class="nav nav-tabs list" id="myTab">
+                                                                    <li><a href="./index.html">module_api_implementation</a></li>
+                                                                                                            <li><a href="./user_api_implementation.html">user_api_implementation</a></li>
+                                                                                                              <li><a href="./typeProjectMap_api_implementation.html">typeProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./moduleProjectMap_api_implementation.html">moduleProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./task_api_implementation.html">task_api_implementation</a></li>
+                                                                                                              <li><a href="./userProjectMap_api_implementation.html">userProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./role_api_implementation.html">role_api_implementation</a></li>
+                                                                                                              <li><a href="./common.html">common</a></li>
+                                                                                                              <li><a href="./interface.html">interface</a></li>
+                                                                                                              <li><a href="./priorityProjectMap_api_implementation.html">priorityProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./global.html">global</a></li>
+                                                                                                              <li><a href="./type_api_implementation.html">type_api_implementation</a></li>
+                                                                                                              <li class="active"><a href="./priority_api_implementation.html">priority_api_implementation</a></li>
+                                                                                                              <li><a href="./project_api_implementation.html">project_api_implementation</a></li>
+                                                                                                              <li><a href="./activityworkflow_api_implementation.html">activityworkflow_api_implementation</a></li>
+                                                                </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>laniak-core-api</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="nav-header">Flows</li>
+                      <li data-toggle="collapse" data-target="#_getPriorityIdFromNameNav"><a href="#_getPriorityIdFromName"><i class="icon-chevron-right"></i> getPriorityIdFromName</a>
+            </li>
+            <div id="_getPriorityIdFromNameNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getPrioritiesFromProjectNav"><a href="#_getPrioritiesFromProject"><i class="icon-chevron-right"></i> getPrioritiesFromProject</a>
+            </li>
+            <div id="_getPrioritiesFromProjectNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainPriorityFlowNav"><a href="#_mainPriorityFlow"><i class="icon-chevron-right"></i> mainPriorityFlow</a>
+            </li>
+            <div id="_mainPriorityFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                    </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_createNewPriorityNav"><a href="#_createNewPriority"><i class="icon-chevron-right"></i> createNewPriority</a>
+            </li>
+            <div id="_createNewPriorityNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                                                                                                  </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_deletePriorityFlowNav"><a href="#_deletePriorityFlow"><i class="icon-chevron-right"></i> deletePriorityFlow</a>
+            </li>
+            <div id="_deletePriorityFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                  </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Elements and their descriptions
+        ================================================== -->
+        <div style="max-height: 640px;width:100%;overflow:auto;">
+                      <img src="img/priority_api_implementation.png" usemap="#mFlowMap" alt="Mule Configuration Image">
+            <map name="mFlowMap">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </map>
+                  </div>
+        <!--Mule configuration xml code-->
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapseMuleConfiguration">
+            Show Mule Configuration XML code...
+          </a>
+        </div>
+        <div id="collapseMuleConfiguration" class="accordion-body collapse" style="height: 0px;">
+          <div class="accordion-inner">
+              <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd"&gt;
+    &lt;flow name="getPriorityIdFromName" doc:id="36012b60-c5d7-46f5-8302-c3c825950609"&gt; 
+        &lt;db:select doc:name="Select" doc:id="500c985f-bd86-4141-81d9-a07fef9ee2a1" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "PriorityId" FROM Priority_master WHERE "Priority" = :priorityName]]&gt;   &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'priorityName' : attributes.queryParams.name}]]]&gt;  &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="45c5e0fa-69a3-4560-86ec-130fad311800"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getPrioritiesFromProject" doc:id="62fb8a65-ff1b-4aa0-b103-9e4d5e0a36b9"&gt; 
+        &lt;db:select doc:name="Select" doc:id="690bb97e-3509-410b-9dc7-bf0bbc55a1b1" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "PriorityId" , "Priority" FROM View_priorityProjectMap WHERE "ProjectId" = :projectId]]&gt;    &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'projectId' : attributes.queryParams.projectId}]]]&gt;    &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="7a0cc3b0-9285-4364-bfe9-10db6db58eaf"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainPriorityFlow" doc:id="b1bd3ae3-732f-4da4-9086-ffe5e050c822"&gt; 
+        &lt;choice doc:name="Choice" doc:id="7db9a8db-9abd-46b5-9f35-2c9f71bd45a7"&gt; 
+            &lt;when expression="#[attributes.queryParams.name != null]"&gt; 
+                &lt;flow-ref doc:name="getPriorityIdFromName" doc:id="eea099e4-c80e-4b56-88d2-74881d3e660e" name="getPriorityIdFromName"/&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;flow-ref doc:name="getPrioritiesFromProject" doc:id="00a18bbe-5085-47f9-b19b-6482bad16000" name="getPrioritiesFromProject"/&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="createNewPriority" doc:id="aa96b7d7-9cc9-4d52-aaab-5c77bd7ca4dd"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="51168f30-7099-4a26-a005-c1145def1679" variableName="backup_payload"/&gt;  
+        &lt;flow-ref doc:name="generateNewId" doc:id="17d84647-3d48-4976-bbc9-aa6a9a9b9d37" name="generateNewId"/&gt;  
+        &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+vars.backup_payload default {} ++ {&amp;quot;priorityId&amp;quot; : payload.nextval}]" doc:name="Reset backup_payload" doc:id="0f6b470e-cebd-4477-9c4f-e83ec43480e5" variableName="backup_payload"/&gt;
+        &lt;try doc:name="Try" doc:id="8ff9d48d-09af-4f5a-b037-20feb1ac776b" transactionalAction="ALWAYS_BEGIN"&gt; 
+            &lt;db:insert doc:name="Priority_Master Insert" doc:id="f0c62003-851c-43e4-85cf-b3be2f5132d2" config-ref="rdbms_master_db_config"&gt; 
+                &lt;db:sql&gt;&lt;![CDATA[INSERT INTO priority_master ("PriorityId", "Priority", "DateCreated") VALUES (:priorityid , :priority, CURRENT_DATE)]]&gt;    &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "priorityid" : vars.backup_payload.priorityId,
+
+    "priority" : vars.backup_payload.priority
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+            &lt;/db:insert&gt;  
+            &lt;ee:transform doc:name="Transform Message" doc:id="30b30e75-63ad-4873-8bb9-d6f19aff6a1f"&gt; 
+                &lt;ee:message&gt; 
+                    &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+vars.backup_payload]]&gt;  &lt;/ee:set-payload&gt;
+                &lt;/ee:message&gt; 
+            &lt;/ee:transform&gt;  
+            &lt;flow-ref doc:name="createNewPriorityProjectMap" doc:id="1e59404e-adaa-484a-92fb-3f422050e9ce" name="createNewPriorityProjectMap"/&gt; 
+        &lt;/try&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="690d79f8-f6b4-43df-88b8-9b9240b644e0"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="deletePriorityFlow" doc:id="87b10aa1-a974-451c-911c-b596bab73d57"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="4b3c6c3f-c9e4-4675-8a1e-11e1fa87e266" variableName="backup_payload"/&gt;  
+        &lt;db:select doc:name="Select" doc:id="908bd6bd-c152-4525-8987-009cfa702232" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM 
+
+(SELECT * FROM task_master tm JOIN priority_master mm ON (tm."Priority" = mm."Priority") )temp
+
+WHERE temp."PriorityId" = :priorityid]]&gt;    &lt;/db:sql&gt;
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "priorityid" : vars.backup_payload.priorityId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="554cfa36-958e-4409-97de-9beb2fb31ed0"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;choice doc:name="Choice" doc:id="3ef38e5a-1f3f-4cdc-8ccd-bcd84a0b6cec"&gt; 
+            &lt;when expression="#[payload.count == 0]"&gt; 
+                &lt;db:delete doc:name="Delete" doc:id="30c9d722-98ca-4300-8600-7b4117a07f41" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;db:sql&gt;&lt;![CDATA[DELETE FROM priority_master WHERE "PriorityId" = :priorityid;
+
+DELETE FROM priority_project_map WHERE "PriorityId" = :priorityid;]]&gt;   &lt;/db:sql&gt;
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    priorityid : vars.backup_payload.priorityId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+                &lt;/db:delete&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;ee:transform doc:name="Transform Message" doc:id="0da36a69-478a-4725-9a30-d94c190da481"&gt; 
+                    &lt;ee:message&gt; 
+                        &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Cannot delete priority as some tasks are assigned with specified priority.Please Complete / Delete / Update tasks to New priority and try again"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                    &lt;/ee:message&gt; 
+                &lt;/ee:transform&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt; 
+&lt;/mule&gt;
+</code></pre>
+
+          </div>
+        </div>
+
+                  <section id="_getPriorityIdFromName">
+            <div class="page-header">
+                <h1>getPriorityIdFromName <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getPriorityIdFromName.png" usemap="#flowMapgetPriorityIdFromName" alt="getPriorityIdFromName image">
+                <map name="flowMapgetPriorityIdFromName">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getPriorityIdFromNamexml_code">
+                  Show configuration XML code of the flow getPriorityIdFromName...
+                </a>
+              </div>
+              <div id="_getPriorityIdFromNamexml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getPriorityIdFromName" doc:id="36012b60-c5d7-46f5-8302-c3c825950609"&gt;  
+    &lt;db:select doc:name="Select" doc:id="500c985f-bd86-4141-81d9-a07fef9ee2a1" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "PriorityId" FROM Priority_master WHERE "Priority" = :priorityName]]&gt;   &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'priorityName' : attributes.queryParams.name}]]]&gt;  &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="45c5e0fa-69a3-4560-86ec-130fad311800"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getPrioritiesFromProject">
+            <div class="page-header">
+                <h1>getPrioritiesFromProject <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getPrioritiesFromProject.png" usemap="#flowMapgetPrioritiesFromProject" alt="getPrioritiesFromProject image">
+                <map name="flowMapgetPrioritiesFromProject">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getPrioritiesFromProjectxml_code">
+                  Show configuration XML code of the flow getPrioritiesFromProject...
+                </a>
+              </div>
+              <div id="_getPrioritiesFromProjectxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getPrioritiesFromProject" doc:id="62fb8a65-ff1b-4aa0-b103-9e4d5e0a36b9"&gt;  
+    &lt;db:select doc:name="Select" doc:id="690bb97e-3509-410b-9dc7-bf0bbc55a1b1" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "PriorityId" , "Priority" FROM View_priorityProjectMap WHERE "ProjectId" = :projectId]]&gt;    &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'projectId' : attributes.queryParams.projectId}]]]&gt;    &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="7a0cc3b0-9285-4364-bfe9-10db6db58eaf"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_mainPriorityFlow">
+            <div class="page-header">
+                <h1>mainPriorityFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainPriorityFlow.png" usemap="#flowMapmainPriorityFlow" alt="mainPriorityFlow image">
+                <map name="flowMapmainPriorityFlow">
+                                                                                                                                                    </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainPriorityFlowxml_code">
+                  Show configuration XML code of the flow mainPriorityFlow...
+                </a>
+              </div>
+              <div id="_mainPriorityFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainPriorityFlow" doc:id="b1bd3ae3-732f-4da4-9086-ffe5e050c822"&gt;  
+    &lt;choice doc:name="Choice" doc:id="7db9a8db-9abd-46b5-9f35-2c9f71bd45a7"&gt; 
+        &lt;when expression="#[attributes.queryParams.name != null]"&gt; 
+            &lt;flow-ref doc:name="getPriorityIdFromName" doc:id="eea099e4-c80e-4b56-88d2-74881d3e660e" name="getPriorityIdFromName"/&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;flow-ref doc:name="getPrioritiesFromProject" doc:id="00a18bbe-5085-47f9-b19b-6482bad16000" name="getPrioritiesFromProject"/&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                    </section>
+                  <section id="_createNewPriority">
+            <div class="page-header">
+                <h1>createNewPriority <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/createNewPriority.png" usemap="#flowMapcreateNewPriority" alt="createNewPriority image">
+                <map name="flowMapcreateNewPriority">
+                                                                                                                                                                                                                                                                                                                                                  </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_createNewPriorityxml_code">
+                  Show configuration XML code of the flow createNewPriority...
+                </a>
+              </div>
+              <div id="_createNewPriorityxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="createNewPriority" doc:id="aa96b7d7-9cc9-4d52-aaab-5c77bd7ca4dd"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="51168f30-7099-4a26-a005-c1145def1679" variableName="backup_payload"/&gt;  
+    &lt;flow-ref doc:name="generateNewId" doc:id="17d84647-3d48-4976-bbc9-aa6a9a9b9d37" name="generateNewId"/&gt;  
+    &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+vars.backup_payload default {} ++ {&amp;quot;priorityId&amp;quot; : payload.nextval}]" doc:name="Reset backup_payload" doc:id="0f6b470e-cebd-4477-9c4f-e83ec43480e5" variableName="backup_payload"/&gt;
+    &lt;try doc:name="Try" doc:id="8ff9d48d-09af-4f5a-b037-20feb1ac776b" transactionalAction="ALWAYS_BEGIN"&gt; 
+        &lt;db:insert doc:name="Priority_Master Insert" doc:id="f0c62003-851c-43e4-85cf-b3be2f5132d2" config-ref="rdbms_master_db_config"&gt;  
+            &lt;db:sql&gt;&lt;![CDATA[INSERT INTO priority_master ("PriorityId", "Priority", "DateCreated") VALUES (:priorityid , :priority, CURRENT_DATE)]]&gt;    &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "priorityid" : vars.backup_payload.priorityId,
+
+    "priority" : vars.backup_payload.priority
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:insert&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="30b30e75-63ad-4873-8bb9-d6f19aff6a1f"&gt;  
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+vars.backup_payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;flow-ref doc:name="createNewPriorityProjectMap" doc:id="1e59404e-adaa-484a-92fb-3f422050e9ce" name="createNewPriorityProjectMap"/&gt; 
+    &lt;/try&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="690d79f8-f6b4-43df-88b8-9b9240b644e0"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                                                                      </section>
+                  <section id="_deletePriorityFlow">
+            <div class="page-header">
+                <h1>deletePriorityFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/deletePriorityFlow.png" usemap="#flowMapdeletePriorityFlow" alt="deletePriorityFlow image">
+                <map name="flowMapdeletePriorityFlow">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_deletePriorityFlowxml_code">
+                  Show configuration XML code of the flow deletePriorityFlow...
+                </a>
+              </div>
+              <div id="_deletePriorityFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="deletePriorityFlow" doc:id="87b10aa1-a974-451c-911c-b596bab73d57"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="4b3c6c3f-c9e4-4675-8a1e-11e1fa87e266" variableName="backup_payload"/&gt;  
+    &lt;db:select doc:name="Select" doc:id="908bd6bd-c152-4525-8987-009cfa702232" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM 
+
+(SELECT * FROM task_master tm JOIN priority_master mm ON (tm."Priority" = mm."Priority") )temp
+
+WHERE temp."PriorityId" = :priorityid]]&gt;    &lt;/db:sql&gt;
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "priorityid" : vars.backup_payload.priorityId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="554cfa36-958e-4409-97de-9beb2fb31ed0"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;choice doc:name="Choice" doc:id="3ef38e5a-1f3f-4cdc-8ccd-bcd84a0b6cec"&gt; 
+        &lt;when expression="#[payload.count == 0]"&gt; 
+            &lt;db:delete doc:name="Delete" doc:id="30c9d722-98ca-4300-8600-7b4117a07f41" config-ref="rdbms_master_db_config"&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[DELETE FROM priority_master WHERE "PriorityId" = :priorityid;
+
+DELETE FROM priority_project_map WHERE "PriorityId" = :priorityid;]]&gt;   &lt;/db:sql&gt;
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    priorityid : vars.backup_payload.priorityId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+            &lt;/db:delete&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;ee:transform doc:name="Transform Message" doc:id="0da36a69-478a-4725-9a30-d94c190da481"&gt;  
+                &lt;ee:message&gt; 
+                    &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Cannot delete priority as some tasks are assigned with specified priority.Please Complete / Delete / Update tasks to New priority and try again"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                &lt;/ee:message&gt; 
+            &lt;/ee:transform&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+              </div>
+    </div>
+  </div>
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with <a href="http://www.mulesoft.com/mule-studio/" target="_blank">Anypoint Studio</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blogs.mulesoft.org/">Read the blog</a></li>
+          <li><a href="http://www.mulesoft.org/jira/browse/">Submit issues</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/widgets.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script src="assets/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap-affix.js"></script>
+    <script src="assets/scroller.js"></script>
+    <script src="assets/application.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>laniak-core-api · Anypoint Studio Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <link href="assets/prettify.css" rel="stylesheet">
+    <link href="assets/scroller.css" rel="stylesheet">
+
+  </head>
+
+  <body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar"><iframe style="display: none;" id="rufous-sandbox" name="uid13460061790411"></iframe>
+
+    <!-- Navbar
+    ================================================== -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand pull-left" href="#">laniak-core-api</a>
+          <p class="navbar-text pull-right">
+              <a href="http://www.mulesoft.com" class="navbar-link">
+                <img src="./assets/images/mulesoft-logo-final.png" alt="MuleSoft" id="mulesoftlogo">
+              </a>
+          </p>
+          <div class="scroller scroller-left"><img src="./assets/icons/glyphicons_chevron-left.png" alt="scrollLeft"></div>
+          <div class="scroller scroller-right"><img src="./assets/icons/glyphicons_chevron-right.png" alt="scrollRight"></div>
+          <div class="wrapper">
+            <ul class="nav nav-tabs list" id="myTab">
+                                                                    <li><a href="./index.html">module_api_implementation</a></li>
+                                                                                                            <li><a href="./user_api_implementation.html">user_api_implementation</a></li>
+                                                                                                              <li><a href="./typeProjectMap_api_implementation.html">typeProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./moduleProjectMap_api_implementation.html">moduleProjectMap_api_implementation</a></li>
+                                                                                                              <li class="active"><a href="./task_api_implementation.html">task_api_implementation</a></li>
+                                                                                                              <li><a href="./userProjectMap_api_implementation.html">userProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./role_api_implementation.html">role_api_implementation</a></li>
+                                                                                                              <li><a href="./common.html">common</a></li>
+                                                                                                              <li><a href="./interface.html">interface</a></li>
+                                                                                                              <li><a href="./priorityProjectMap_api_implementation.html">priorityProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./global.html">global</a></li>
+                                                                                                              <li><a href="./type_api_implementation.html">type_api_implementation</a></li>
+                                                                                                              <li><a href="./priority_api_implementation.html">priority_api_implementation</a></li>
+                                                                                                              <li><a href="./project_api_implementation.html">project_api_implementation</a></li>
+                                                                                                              <li><a href="./activityworkflow_api_implementation.html">activityworkflow_api_implementation</a></li>
+                                                                </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>laniak-core-api</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="nav-header">Flows</li>
+                      <li data-toggle="collapse" data-target="#_getAllTasksNav"><a href="#_getAllTasks"><i class="icon-chevron-right"></i> getAllTasks</a>
+            </li>
+            <div id="_getAllTasksNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getTaskOnFilterConditionNav"><a href="#_getTaskOnFilterCondition"><i class="icon-chevron-right"></i> getTaskOnFilterCondition</a>
+            </li>
+            <div id="_getTaskOnFilterConditionNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainTaskFlowNav"><a href="#_mainTaskFlow"><i class="icon-chevron-right"></i> mainTaskFlow</a>
+            </li>
+            <div id="_mainTaskFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getTasksByIdNav"><a href="#_getTasksById"><i class="icon-chevron-right"></i> getTasksById</a>
+            </li>
+            <div id="_getTasksByIdNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                    </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getTaskActivityNav"><a href="#_getTaskActivity"><i class="icon-chevron-right"></i> getTaskActivity</a>
+            </li>
+            <div id="_getTaskActivityNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getTaskByIdWithActivityNav"><a href="#_getTaskByIdWithActivity"><i class="icon-chevron-right"></i> getTaskByIdWithActivity</a>
+            </li>
+            <div id="_getTaskByIdWithActivityNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainTaskByIdNav"><a href="#_mainTaskById"><i class="icon-chevron-right"></i> mainTaskById</a>
+            </li>
+            <div id="_mainTaskByIdNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                    </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getUserBasedTaskSummaryNav"><a href="#_getUserBasedTaskSummary"><i class="icon-chevron-right"></i> getUserBasedTaskSummary</a>
+            </li>
+            <div id="_getUserBasedTaskSummaryNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getTaskSummaryNav"><a href="#_getTaskSummary"><i class="icon-chevron-right"></i> getTaskSummary</a>
+            </li>
+            <div id="_getTaskSummaryNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getDetailedTaskSummaryNav"><a href="#_getDetailedTaskSummary"><i class="icon-chevron-right"></i> getDetailedTaskSummary</a>
+            </li>
+            <div id="_getDetailedTaskSummaryNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getUserBasedDetailedTaskSummaryNav"><a href="#_getUserBasedDetailedTaskSummary"><i class="icon-chevron-right"></i> getUserBasedDetailedTaskSummary</a>
+            </li>
+            <div id="_getUserBasedDetailedTaskSummaryNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainTaskSummaryFlowNav"><a href="#_mainTaskSummaryFlow"><i class="icon-chevron-right"></i> mainTaskSummaryFlow</a>
+            </li>
+            <div id="_mainTaskSummaryFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getVerificationCommitsNav"><a href="#_getVerificationCommits"><i class="icon-chevron-right"></i> getVerificationCommits</a>
+            </li>
+            <div id="_getVerificationCommitsNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getVerificationDeletesNav"><a href="#_getVerificationDeletes"><i class="icon-chevron-right"></i> getVerificationDeletes</a>
+            </li>
+            <div id="_getVerificationDeletesNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainTaskVerificationFlowNav"><a href="#_mainTaskVerificationFlow"><i class="icon-chevron-right"></i> mainTaskVerificationFlow</a>
+            </li>
+            <div id="_mainTaskVerificationFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getUserBasedRCSUtilizationNav"><a href="#_getUserBasedRCSUtilization"><i class="icon-chevron-right"></i> getUserBasedRCSUtilization</a>
+            </li>
+            <div id="_getUserBasedRCSUtilizationNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getAllRCSUtilizationNav"><a href="#_getAllRCSUtilization"><i class="icon-chevron-right"></i> getAllRCSUtilization</a>
+            </li>
+            <div id="_getAllRCSUtilizationNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getUserBasedRCSSummaryNav"><a href="#_getUserBasedRCSSummary"><i class="icon-chevron-right"></i> getUserBasedRCSSummary</a>
+            </li>
+            <div id="_getUserBasedRCSSummaryNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getAllRCSSummaryNav"><a href="#_getAllRCSSummary"><i class="icon-chevron-right"></i> getAllRCSSummary</a>
+            </li>
+            <div id="_getAllRCSSummaryNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainTaskRCSUtilizationFlowNav"><a href="#_mainTaskRCSUtilizationFlow"><i class="icon-chevron-right"></i> mainTaskRCSUtilizationFlow</a>
+            </li>
+            <div id="_mainTaskRCSUtilizationFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_createNewTaskNav"><a href="#_createNewTask"><i class="icon-chevron-right"></i> createNewTask</a>
+            </li>
+            <div id="_createNewTaskNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_updateTaskFieldsNav"><a href="#_updateTaskFields"><i class="icon-chevron-right"></i> updateTaskFields</a>
+            </li>
+            <div id="_updateTaskFieldsNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_updateTaskActivityNav"><a href="#_updateTaskActivity"><i class="icon-chevron-right"></i> updateTaskActivity</a>
+            </li>
+            <div id="_updateTaskActivityNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainUpdateTaskFlowNav"><a href="#_mainUpdateTaskFlow"><i class="icon-chevron-right"></i> mainUpdateTaskFlow</a>
+            </li>
+            <div id="_mainUpdateTaskFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                                                            </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_deleteTaskFlowNav"><a href="#_deleteTaskFlow"><i class="icon-chevron-right"></i> deleteTaskFlow</a>
+            </li>
+            <div id="_deleteTaskFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                                                                                                  </ul>
+              </div>
+            </div>
+                  </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Elements and their descriptions
+        ================================================== -->
+        <div style="max-height: 640px;width:100%;overflow:auto;">
+                      <img src="img/task_api_implementation.png" usemap="#mFlowMap" alt="Mule Configuration Image">
+            <map name="mFlowMap">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </map>
+                  </div>
+        <!--Mule configuration xml code-->
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapseMuleConfiguration">
+            Show Mule Configuration XML code...
+          </a>
+        </div>
+        <div id="collapseMuleConfiguration" class="accordion-body collapse" style="height: 0px;">
+          <div class="accordion-inner">
+              <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:mongo="http://www.mulesoft.org/schema/mule/mongo" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/mongo http://www.mulesoft.org/schema/mule/mongo/current/mule-mongo.xsd"&gt;
+    &lt;flow name="getAllTasks" doc:id="cb257215-e5ac-4ce8-85c1-97347cd46761"&gt; 
+        &lt;db:select doc:name="Select" doc:id="0d295f7d-8309-4546-b8c6-d764b7e71a8e" config-ref="rdbms_master_db_config"&gt; 
+            &lt;reconnect/&gt;  
+            &lt;db:sql&gt;&lt;![CDATA[SELECT * FROM view_taskmaster]]&gt;   &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="25653c8b-fc38-4cc6-89ef-fd57db2562f3"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+output application/json
+---
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getTaskOnFilterCondition" doc:id="c5e1bed9-deac-4ba9-ba1d-c02ba53604dd"&gt; 
+        &lt;set-variable value="#[attributes.queryParams.taskFilter]" doc:name="Set Filter" doc:id="2c96eeb9-5966-46b9-b201-08a4b0b1085c" variableName="filter"/&gt;  
+        &lt;set-variable value="#[attributes.queryParams.filterParam]" doc:name="Set Value" doc:id="a0983957-af3d-425a-b53c-f9e78f889307" variableName="value"/&gt;  
+        &lt;set-variable value="#[&amp;quot;SELECT * FROM view_taskmaster WHERE \&amp;quot;&amp;quot; ++ vars.filter as String default &amp;quot;dummy&amp;quot; ++ &amp;quot;\&amp;quot; = '&amp;quot; ++ vars.value as String default &amp;quot;dummy&amp;quot; ++ &amp;quot;'&amp;quot;]" doc:name="Generate Dynamic Query" doc:id="0e249a40-551d-4542-b139-6b63c47fb866" variableName="query"/&gt;  
+        &lt;db:select doc:name="Select" doc:id="3dd31a23-3b50-4804-8569-a550eeddfc33" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[#[vars.query]]]&gt;   &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="14783d0f-58e4-44c2-a5ed-1c44d4776d2a"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainTaskFlow" doc:id="ab140abe-e530-4351-ae48-a17943db4c6b"&gt; 
+        &lt;choice doc:name="Choice" doc:id="1432e2df-ece6-48bd-8e51-18b266e94208"&gt; 
+            &lt;when expression="#[sizeOf(attributes.queryParams) != 0]"&gt; 
+                &lt;flow-ref doc:name="get Tasks Using Filter" doc:id="0d4b7e39-8363-42f0-805c-f2c16394aa15" name="getTaskOnFilterCondition"/&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;flow-ref doc:name="get All Tasks" doc:id="6686faf5-4387-455a-992f-c5a06cf3d4a3" name="getAllTasks"/&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="b4fc908d-c928-4e9b-aef8-0ed7037cc0eb"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getTasksById" doc:id="815a9fb6-0ea8-41c1-8161-2a21d6eec916"&gt; 
+        &lt;ee:transform doc:name="Transform Message" doc:id="298297f5-8a6e-4bb5-970c-9050e75fceb9"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "taskId": if( attributes.uriParams.ID? ) attributes.uriParams.ID else vars.backup_payload.taskId
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;db:select doc:name="Select" doc:id="c37117f2-d757-4d68-988f-d7431125a5b3" config-ref="rdbms_master_db_config"&gt; 
+            &lt;reconnect/&gt;  
+            &lt;db:sql&gt;&lt;![CDATA[SELECT * FROM view_taskmaster AS ms WHERE ms."TaskId" = :taskId]]&gt; &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'taskId' : payload.taskId}]]]&gt; &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="d459ae3a-bf80-4e2e-895f-171b83cf8243"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+output application/json
+---
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt;  
+            &lt;ee:variables&gt; 
+                &lt;ee:set-variable variableName="abc"&gt;&lt;![CDATA[%dw 2.0
+output application/java
+---
+payload.abc]]&gt;  &lt;/ee:set-variable&gt;
+                &lt;ee:set-variable variableName="task"&gt;&lt;![CDATA[%dw 2.0
+output application/java
+---
+payload.id]]&gt;   &lt;/ee:set-variable&gt;
+            &lt;/ee:variables&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getTaskActivity" doc:id="b1039552-2f34-46ca-89fd-e0c76303833d"&gt; 
+        &lt;set-variable value="#[output application/json
+---
+if( attributes.uriParams.ID? ) attributes.uriParams.ID as Number else payload.taskId as Number]" doc:name="Set Variable" doc:id="1bd227d3-7d24-4574-bef4-1250fcd909f0" variableName="taskId"/&gt;
+        &lt;ee:transform doc:name="Transform Message" doc:id="47d4d7c5-08c3-4bfb-a577-798ef89408f2"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "taskId" : vars.taskId as Number
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;mongo:find-documents doc:name="Find documents" doc:id="e984de39-c227-429e-8ccf-ac68b1b54230" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection" fields=","&gt; 
+            &lt;mongo:query&gt;&lt;![CDATA[#[payload]]]&gt; &lt;/mongo:query&gt; 
+        &lt;/mongo:find-documents&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="5248b928-c28d-4c5c-9bb6-d2fedf43c2e5"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getTaskByIdWithActivity" doc:id="36dd90b7-165a-45be-9d74-d8b0652b5f55"&gt; 
+        &lt;set-variable value="#[attributes.queryParams]" doc:name="Set Variable" doc:id="91e42af4-95e5-4266-a051-1cbe1b3a67f6" variableName="backup_payload"/&gt;  
+        &lt;scatter-gather doc:name="Scatter-Gather" doc:id="5f6b025f-f9fa-4b71-8127-71dccc08263c"&gt; 
+            &lt;route&gt; 
+                &lt;flow-ref doc:name="getTasksById" doc:id="dc8adf47-eff2-4d21-bd5b-ca14787e26db" name="getTasksById"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;flow-ref doc:name="getTaskActivity" doc:id="973ca20c-21ed-4a05-a6ee-9d3412dcb63c" name="getTaskActivity"/&gt; 
+            &lt;/route&gt; 
+        &lt;/scatter-gather&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="5459bf62-037b-49eb-9dc8-0d3edf3a4256"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainTaskById" doc:id="5de62e94-37c1-4f3f-8b0f-b574ac7d675c"&gt; 
+        &lt;choice doc:name="Choice" doc:id="71bdbe19-801c-47cc-b734-27aed0e10ca1"&gt; 
+            &lt;when expression="#[attributes.queryParams.activity == &amp;quot;false&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="getTasksById" doc:id="d5a224a1-e6d0-483d-995d-46aaa993de9a" name="getTasksById"/&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;flow-ref doc:name="getTaskByIdWithActivity" doc:id="1ab276d4-e5f0-45a0-b8cc-1ca4057cbfca" name="getTaskByIdWithActivity"/&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getUserBasedTaskSummary" doc:id="07b65bd5-bda9-49e4-aeb7-9630e4598ad2"&gt; 
+        &lt;scatter-gather doc:name="Scatter-Gather" doc:id="7a731926-11e0-4a47-9a82-9678bb4ff802"&gt; 
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="1f3449ae-eaf7-4b16-bf19-174f0640820a" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskOwner" = :userId ]]&gt;   &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload[0].count]" doc:name="Set Total Count" doc:id="118ee4db-c522-402b-90c4-4171de6293c7" variableName="totalCount"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="e2c23618-d63d-40f0-bda5-727c26383075" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('New' , 'In_Progress') AND "TaskOwner" = :userId ]]&gt;   &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload[0].count]" doc:name="Set Active Count" doc:id="771dfeb3-1079-4724-8d63-70afad2709f0" variableName="activeCount"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="5047e21e-c757-4889-8280-01d89c9fdfb5" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('Complete') AND "TaskOwner" = :userId ]]&gt;  &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload[0].count]" doc:name="Set Completed Count" doc:id="191e5da0-36ce-4458-b4cd-d90605b56e55" variableName="completedCount"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="61dcf0d8-c3e4-4c2a-a299-a30268e47e4e" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT "Module" , COUNT(0) FROM View_TaskMaster WHERE "TaskOwner" = :userId GROUP BY "Module"]]&gt;   &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload]" doc:name="Set Module Array" doc:id="4ca7dce6-7595-4c5a-a1a2-3630a0f7b97c" variableName="module"/&gt; 
+            &lt;/route&gt; 
+        &lt;/scatter-gather&gt;  
+        &lt;ee:transform doc:name="Extract payload from all outputs" doc:id="04c5d3df-3dd3-4880-8a0d-6fae216a1954"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    totalCount: vars.totalCount as String,
+
+    activeCount: vars.activeCount as String,
+
+    completedCount: vars.completedCount as String,
+
+    moduleData: vars.module
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getTaskSummary" doc:id="57f5b681-ed08-4f97-aa56-750f51d60a11"&gt; 
+        &lt;scatter-gather doc:name="Scatter-Gather" doc:id="c7c893d1-afeb-4b49-a9ef-26076f37783a"&gt; 
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="e7892d2b-efb6-4ba1-8b9d-1b9d7ff79b63" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster]]&gt;    &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload[0].count]" doc:name="Set Total Count" doc:id="78bd55a4-cc80-4c54-9bca-f062b9814b7b" variableName="totalCount"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="89bdab24-5db8-45a5-a009-c9181f022ff4" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('New' , 'In_Progress')]]&gt;  &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload[0].count]" doc:name="Set Active Count" doc:id="1b37ce21-2392-40e4-b10e-55e640ecc098" variableName="activeCount"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="56d9277d-98e8-4a4b-93fd-254ab9267a19" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('Complete')]]&gt; &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload[0].count]" doc:name="Set Completed Count" doc:id="ab636d0b-3249-4e71-9718-25309c72bc33" variableName="completedCount"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;db:select doc:name="Select" doc:id="26a87efb-a512-4aa4-9d53-0f806ab450e8" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT "Module" , COUNT(0) FROM View_TaskMaster GROUP BY "Module"]]&gt;   &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt;  
+                &lt;set-variable value="#[payload]" doc:name="Set Module Array" doc:id="cddb44d9-ae27-480a-9705-18803670e811" variableName="module"/&gt; 
+            &lt;/route&gt; 
+        &lt;/scatter-gather&gt;  
+        &lt;ee:transform doc:name="Extract payload from all outputs" doc:id="019aca7e-e95b-4efd-b11f-9a936c802b76"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    totalCount: vars.totalCount as String,
+
+    activeCount: vars.activeCount as String,
+
+    completedCount: vars.completedCount as String,
+
+    moduleData: vars.module
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getDetailedTaskSummary" doc:id="ee2ea5c9-3712-4d4f-ae46-580660590048"&gt; 
+        &lt;db:select doc:name="Select" doc:id="c39ca9c7-16f6-4387-879d-0b11f574b0bf" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskStatus" , count(0) FROM view_taskmaster GROUP BY "TaskStatus"]]&gt;   &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="f811fee2-39cf-4a63-81ae-cfd2ceac8f8e"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    totalCount: vars.totalCount as String,
+
+    activeCount: vars.activeCount as String,
+
+    completedCount: vars.completedCount as String,
+
+    moduleData: vars.module
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getUserBasedDetailedTaskSummary" doc:id="1b0494bd-665e-45f8-bf13-3ec3826f0a76"&gt; 
+        &lt;db:select doc:name="Select" doc:id="eb7c574a-17d1-4a7e-9ea7-da8c7976ae45" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskStatus" , count(0) FROM view_taskmaster WHERE "TaskAssigner" = :userId  GROUP BY "TaskStatus"]]&gt;   &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="eca1f818-9954-4b8a-a251-00730f9f1bc4"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainTaskSummaryFlow" doc:id="914474bc-c36c-44b0-9ddc-2d80f9797612"&gt; 
+        &lt;choice doc:name="Choice" doc:id="02ec15de-dd6d-41db-9458-d55dc56d067f"&gt; 
+            &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.details == &amp;quot;false&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="Call getUserBasedTaskSummary" doc:id="124872e5-3793-4265-9ac8-1d2d677cc4d2" name="getUserBasedTaskSummary"/&gt; 
+            &lt;/when&gt;  
+            &lt;when expression="#[attributes.queryParams.userId == null and attributes.queryParams.details == &amp;quot;false&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="getTaskSummary" doc:id="feed2664-d1f8-4072-919d-09482bbf539f" name="getTaskSummary"/&gt; 
+            &lt;/when&gt;  
+            &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.details == &amp;quot;true&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="getUserBasedDetailedTaskSummary" doc:id="f5193c00-60ac-4ded-ab02-71fa5d22cc4a" name="getUserBasedDetailedTaskSummary"/&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;flow-ref doc:name="getTaskSummary" doc:id="17673152-7587-41ad-b639-6d36a4f530e2" name="getTaskSummary"/&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt;  
+        &lt;logger level="INFO" doc:name="Logger" doc:id="a5d76f03-abc1-41cf-90bf-0c73e567a6e4"/&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getVerificationCommits" doc:id="2f5ac52b-70e1-454e-b22f-71672afadd7c"&gt; 
+        &lt;choice doc:name="Choice" doc:id="84ab8c1b-cf89-4302-b409-eb05307adbb5"&gt; 
+            &lt;when expression="#[attributes.queryParams.userId != null]"&gt; 
+                &lt;db:select doc:name="Select" doc:id="79585296-d70f-408b-9d38-03ac3e1eb193" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskAssigner" = :userId  AND "TaskStatus" = 'Self_Commit']]&gt; &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;db:select doc:name="Select" doc:id="64c3519a-033b-459a-a8e3-aaa4479d9322" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskStatus" = 'Self_Commit']]&gt;   &lt;/db:sql&gt; 
+                &lt;/db:select&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="dac30709-c178-4240-a306-b5ae1975d6e5"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getVerificationDeletes" doc:id="4e8d9e74-229c-45e3-8b19-59faf43d71b3"&gt; 
+        &lt;choice doc:name="Choice" doc:id="c6622fc4-2dbb-45fb-a0fb-d3bb92557578"&gt; 
+            &lt;when expression="#[attributes.queryParams.userId != null]"&gt; 
+                &lt;db:select doc:name="Select" doc:id="89c20924-58cb-4c3f-9fe9-21815b18efde" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskAssigner" = :userId  AND "TaskStatus" = 'Self_Delete']]&gt; &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+                &lt;/db:select&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;db:select doc:name="Select" doc:id="f8b79979-8304-4228-9f02-f5350fbae214" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;reconnect/&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskStatus" = 'Self_Delete']]&gt;   &lt;/db:sql&gt; 
+                &lt;/db:select&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="675e8132-6a20-4221-a010-79c43571ff97"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainTaskVerificationFlow" doc:id="aed3231c-1f3d-48e2-a241-4fe4106b01d6"&gt; 
+        &lt;scatter-gather doc:name="Scatter-Gather" doc:id="0bfae903-5a6c-41e7-911c-687077ecd56b"&gt; 
+            &lt;route&gt; 
+                &lt;flow-ref doc:name="get Verification Commits" doc:id="1fc248df-8751-4eac-b3ed-ba639002687b" name="getVerificationCommits"/&gt; 
+            &lt;/route&gt;  
+            &lt;route&gt; 
+                &lt;flow-ref doc:name="get Verification Deletes" doc:id="60a5ff50-d2ce-409b-ac2d-9eb9820f9c81" name="getVerificationDeletes"/&gt; 
+            &lt;/route&gt; 
+        &lt;/scatter-gather&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="72c7bf48-cfa1-4afd-8bf6-224a84d8524a"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+flatten(payload..payload)]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getUserBasedRCSUtilization" doc:id="206a506a-1f4f-4af1-9dc8-8bc845638895"&gt; 
+        &lt;db:select doc:name="Select" doc:id="7c6ed62f-221b-4b9d-bcaf-4d3b333cca2e" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "Title" , "DateTerminated" , "TaskStatus" , "OwnerName" FROM view_taskmaster WHERE "TaskAssigner" = :userId]]&gt;  &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="0472a294-4bac-4057-b802-d5f82894f42e"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getAllRCSUtilization" doc:id="03db69af-b7e3-4b70-94a8-772faa6912af"&gt; 
+        &lt;db:select doc:name="Select" doc:id="e41cc69d-d70f-4c3d-81b0-fe21d903ea98" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "Title" , "DateTerminated" , "TaskStatus" , "OwnerName" FROM view_taskmaster]]&gt; &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="9fdda18c-8f7e-4451-b833-4435aeb688d6"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getUserBasedRCSSummary" doc:id="e7d0e391-5f07-4297-8615-e59dc616bf68"&gt; 
+        &lt;db:select doc:name="Select" doc:id="618108e4-9f62-4edd-ad74-18af8354cd31" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "OwnerName" , count(0) FROM view_taskmaster WHERE "TaskAssigner" = :userId GROUP BY "OwnerName"]]&gt;  &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="b3d76325-4e9f-4be7-9ff2-9c2c96961f79"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getAllRCSSummary" doc:id="6d11b02c-61bc-4838-913c-444d6ac0773b"&gt; 
+        &lt;db:select doc:name="Select" doc:id="2915602e-134c-4fd8-9126-b5993a70a697" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "OwnerName" , count(0) FROM view_taskmaster GROUP BY "OwnerName"]]&gt; &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="2b011f1a-0a78-4dc0-826a-c8640040239f"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainTaskRCSUtilizationFlow" doc:id="3eaaff66-5f30-4468-a48d-2bc76ef5e11a"&gt; 
+        &lt;choice doc:name="Choice" doc:id="d3a0816d-0deb-444f-a251-5418c6850d79"&gt; 
+            &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.summary == &amp;quot;false&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="getUserBasedRCSUtilization" doc:id="d664b675-c8a5-4696-8cda-2829d98aff25" name="getUserBasedRCSUtilization"/&gt; 
+            &lt;/when&gt;  
+            &lt;when expression="#[attributes.queryParams.userId == null and attributes.queryParams.summary == &amp;quot;false&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="getAllRCSUtilization" doc:id="b2fa9aa7-5d8b-431c-81ff-df678231c9ff" name="getAllRCSUtilization"/&gt; 
+            &lt;/when&gt;  
+            &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.summary == &amp;quot;true&amp;quot;]"&gt; 
+                &lt;flow-ref doc:name="getUserBasedRCSSummary" doc:id="ab2bd87d-dd57-42c1-a141-4f0d660c7580" name="getUserBasedRCSSummary"/&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;flow-ref doc:name="getAllRCSSummary" doc:id="f8cbdb19-8eb2-4c35-b0e7-1fe1b7f965b0" name="getAllRCSSummary"/&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="2d6c9086-5e24-44c7-83e0-cb48836df489"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="createNewTask" doc:id="5aacc7a1-772c-428e-822f-bba7636e400d"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="5dd14675-65de-4bad-954e-803712a01c56" variableName="backup_payload"/&gt;  
+        &lt;flow-ref doc:name="generateNewId" doc:id="61d310ed-f4ef-4c28-b088-dfef5cedfe8b" name="generateNewId"/&gt;  
+        &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+vars.backup_payload ++ {&amp;quot;taskId&amp;quot; : payload.nextval}]" doc:name="Reset backup_payload" doc:id="546b7dfe-d286-44af-a329-ede015fa0a4b" variableName="backup_payload"/&gt;
+        &lt;try doc:name="Try" doc:id="70b41131-bdc3-4406-9c22-cf86938b5d64" transactionalAction="ALWAYS_BEGIN"&gt; 
+            &lt;db:insert doc:name="Task_Master Insert" doc:id="3c34235d-8bd2-4a40-8021-1ec54594fa14" config-ref="rdbms_master_db_config"&gt; 
+                &lt;db:sql&gt;&lt;![CDATA[INSERT INTO task_master ( "TaskId", "ProjectId", "Module", "Title", "Description", "DateTerminated", "Owner", "Assigner", "TaskStatus", "Type", "Priority", "DateCreated") VALUES ( :taskid , :projectid , :moduleid , :title , :description , :dateterminated , :owner , :assigner , :taskstatus , :type , :priority , CURRENT_DATE)]]&gt;   &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "taskid" : vars.backup_payload.taskId,
+
+    "projectid" : vars.backup_payload.projectId,
+
+    "moduleid" : vars.backup_payload.module,
+
+    "title" : vars.backup_payload.title,
+
+    "description" : vars.backup_payload.description,
+
+    "dateterminated" : vars.backup_payload.dateTerminated,
+
+    "owner" : vars.backup_payload.owner,
+
+    "assigner" : vars.backup_payload.assigner,
+
+    "taskstatus" : vars.backup_payload.taskStatus,
+
+    "type" : vars.backup_payload."type",
+
+    "priority" : vars.backup_payload.priority
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+            &lt;/db:insert&gt;  
+            &lt;mongo:insert-document doc:name="Activity Insert" doc:id="cef59240-0a77-49d6-a50c-ed0a25725f1d" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection"&gt; 
+                &lt;mongo:document&gt;&lt;![CDATA[#[{"taskId" : vars.backup_payload.taskId} ++ {"activity" : []}]]]&gt; &lt;/mongo:document&gt; 
+            &lt;/mongo:insert-document&gt; 
+        &lt;/try&gt; 
+    &lt;/flow&gt;  
+    &lt;sub-flow name="updateTaskFields" doc:id="957e19ea-0bc4-4882-87f0-1ece9ded32f2"&gt; 
+        &lt;ee:transform doc:name="Transform Message" doc:id="f0109c26-8d2a-4d7d-8fb0-c327ae881917"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    taskId : payload.taskId,
+
+    field: payload.field,
+
+    fieldValue: payload.fieldValue
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+&amp;quot;UPDATE task_master SET \&amp;quot;&amp;quot; ++ payload.field ++ &amp;quot;\&amp;quot; = '&amp;quot; ++ payload.fieldValue ++ &amp;quot;' WHERE \&amp;quot;TaskId\&amp;quot; = '&amp;quot; ++ payload.taskId ++ &amp;quot;'&amp;quot;]" doc:name="Set Variable" doc:id="423c548b-7af3-426a-a282-a53d1304733c" variableName="query"/&gt;
+        &lt;db:update doc:name="Task_Master Update" doc:id="a8d3145c-d694-49d9-87dc-d006f3ce2fa4" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[#[vars.query]]]&gt;   &lt;/db:sql&gt; 
+        &lt;/db:update&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="71a25e32-85c4-4510-b09c-80e4dbeb2cb8"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/sub-flow&gt;  
+    &lt;sub-flow name="updateTaskActivity" doc:id="c98b9487-d6a3-49b6-a5f5-dd4d0cb96c76"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set Variable" doc:id="6af9742b-e06f-43c7-93c6-ef72293d9731" variableName="incomingData"/&gt;  
+        &lt;flow-ref doc:name="getTaskActivity" doc:id="fb7e22b2-da1a-490b-997c-8a897ad71595" name="getTaskActivity"/&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="a7711fbd-b318-410c-8f20-91c3096e62b7"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+
+
+var arrData = payload.activity  &lt;   &lt; vars.incomingData
+
+---
+
+{
+
+    query: {"taskId" : payload.taskId},
+
+    updateObj: {activity: arrData}
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;mongo:update-documents doc:name="Update documents" doc:id="7e0e3466-754d-49a0-9b9a-bc827f00083a" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection"&gt; 
+            &lt;mongo:query&gt;&lt;![CDATA[#[payload.query]]]&gt;   &lt;/mongo:query&gt;  
+            &lt;mongo:content-to-update&gt;&lt;![CDATA[#[payload.updateObj]]]&gt;   &lt;/mongo:content-to-update&gt; 
+        &lt;/mongo:update-documents&gt; 
+    &lt;/sub-flow&gt;  
+    &lt;flow name="mainUpdateTaskFlow" doc:id="ee5e16f7-9420-4971-ac05-d3c69faf21fc"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="55740c98-7a69-4c40-b397-38c6447da31a" variableName="backup_payload"/&gt;  
+        &lt;set-variable value="#[%dw 2.0
+import * from dw::core::Strings
+output application/json
+---
+&amp;quot;SELECT \&amp;quot;&amp;quot; ++ capitalize(vars.backup_payload.field) ++ &amp;quot;\&amp;quot; as dataValue FROM task_master WHERE \&amp;quot;TaskId\&amp;quot; = &amp;quot; ++ vars.backup_payload.taskId]" doc:name="Set oldDataQuery" doc:id="d5da3918-a66b-49f0-b74d-f53126eb81d2" variableName="oldDataQuery"/&gt;
+        &lt;db:select doc:name="Select" doc:id="9fd7ca94-39f9-4b02-9aa1-9b962bd421a6" config-ref="rdbms_master_db_config" target="oldData" targetValue="#[payload[0].datavalue]"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[#[vars.oldDataQuery]]]&gt;    &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="5b6824f3-fc3a-42a4-b850-2262d03f64fd"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+vars.backup_payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;flow-ref doc:name="updateTaskFields" doc:id="f84156d2-c460-465f-8085-82288bfe82cd" name="updateTaskFields"/&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="7cca9d3c-0df2-4866-b8ec-b661d1983abc"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    taskId: vars.backup_payload.taskId,
+
+    userNameBy: vars.backup_payload.userName,
+
+    userId: vars.backup_payload.userId,
+
+    dateUpdated: now(),
+
+    updateType: vars.backup_payload.field,
+
+    update: {
+
+        oldValue: vars.oldData,     
+
+        newValue: vars.backup_payload.fieldValue
+
+    }
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;flow-ref doc:name="updateTaskActivity" doc:id="f345f54d-dee1-4473-bc81-ee760691ad40" name="updateTaskActivity"/&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="deleteTaskFlow" doc:id="9d9b0b93-2c93-49f8-8ec8-be62295d4641"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="454fa9ef-ae56-4970-bea0-865c6e7a397b" variableName="backup_payload"/&gt;  
+        &lt;db:select doc:name="Select" doc:id="5a53a3f4-af5a-40b6-be4b-72b0ce13e97a" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM task_master WHERE "TaskId" = :taskid AND "TaskStatus" IN ('Complete' , 'Delete')]]&gt;   &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "taskid" : vars.backup_payload.ID
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="93f65212-2b91-44de-8597-5fda973aa42f"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;choice doc:name="Choice" doc:id="2240e4e1-2bbc-4319-976f-709551424a06"&gt; 
+            &lt;when expression="#[payload.count != 0]"&gt; 
+                &lt;try doc:name="Try" doc:id="24e61e34-36b3-4f5f-8f2e-4a1a890de450" transactionalAction="ALWAYS_BEGIN"&gt; 
+                    &lt;db:delete doc:name="Delete" doc:id="19c80756-5c3d-422d-8d42-1fd5318fdf4b" config-ref="rdbms_master_db_config"&gt; 
+                        &lt;db:sql&gt;&lt;![CDATA[DELETE FROM task_master WHERE "TaskId" = :taskid]]&gt;    &lt;/db:sql&gt;  
+                        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "taskid" : vars.backup_payload.ID
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+                    &lt;/db:delete&gt;  
+                    &lt;mongo:remove-documents doc:name="Remove documents" doc:id="92f2fb7b-b2a6-4c80-b375-2c2d6643dfb5" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection"&gt; 
+                        &lt;mongo:query&gt;&lt;![CDATA[#[{
+
+    "taskId" : vars.backup_payload.ID
+
+}]]]&gt;   &lt;/mongo:query&gt;
+                    &lt;/mongo:remove-documents&gt; 
+                &lt;/try&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;ee:transform doc:name="Transform Message" doc:id="984c5107-0667-4fe3-8dd9-815f1142c028"&gt; 
+                    &lt;ee:message&gt; 
+                        &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Task not found"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                    &lt;/ee:message&gt; 
+                &lt;/ee:transform&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt; 
+&lt;/mule&gt;
+</code></pre>
+
+          </div>
+        </div>
+
+                  <section id="_getAllTasks">
+            <div class="page-header">
+                <h1>getAllTasks <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getAllTasks.png" usemap="#flowMapgetAllTasks" alt="getAllTasks image">
+                <map name="flowMapgetAllTasks">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getAllTasksxml_code">
+                  Show configuration XML code of the flow getAllTasks...
+                </a>
+              </div>
+              <div id="_getAllTasksxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getAllTasks" doc:id="cb257215-e5ac-4ce8-85c1-97347cd46761"&gt;  
+    &lt;db:select doc:name="Select" doc:id="0d295f7d-8309-4546-b8c6-d764b7e71a8e" config-ref="rdbms_master_db_config"&gt;  
+        &lt;reconnect/&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT * FROM view_taskmaster]]&gt;   &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="25653c8b-fc38-4cc6-89ef-fd57db2562f3"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+output application/json
+---
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getTaskOnFilterCondition">
+            <div class="page-header">
+                <h1>getTaskOnFilterCondition <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getTaskOnFilterCondition.png" usemap="#flowMapgetTaskOnFilterCondition" alt="getTaskOnFilterCondition image">
+                <map name="flowMapgetTaskOnFilterCondition">
+                                                                                                                                                                                                                                </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getTaskOnFilterConditionxml_code">
+                  Show configuration XML code of the flow getTaskOnFilterCondition...
+                </a>
+              </div>
+              <div id="_getTaskOnFilterConditionxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getTaskOnFilterCondition" doc:id="c5e1bed9-deac-4ba9-ba1d-c02ba53604dd"&gt;  
+    &lt;set-variable value="#[attributes.queryParams.taskFilter]" doc:name="Set Filter" doc:id="2c96eeb9-5966-46b9-b201-08a4b0b1085c" variableName="filter"/&gt;  
+    &lt;set-variable value="#[attributes.queryParams.filterParam]" doc:name="Set Value" doc:id="a0983957-af3d-425a-b53c-f9e78f889307" variableName="value"/&gt;  
+    &lt;set-variable value="#[&amp;quot;SELECT * FROM view_taskmaster WHERE \&amp;quot;&amp;quot; ++ vars.filter as String default &amp;quot;dummy&amp;quot; ++ &amp;quot;\&amp;quot; = '&amp;quot; ++ vars.value as String default &amp;quot;dummy&amp;quot; ++ &amp;quot;'&amp;quot;]" doc:name="Generate Dynamic Query" doc:id="0e249a40-551d-4542-b139-6b63c47fb866" variableName="query"/&gt;  
+    &lt;db:select doc:name="Select" doc:id="3dd31a23-3b50-4804-8569-a550eeddfc33" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[#[vars.query]]]&gt;   &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="14783d0f-58e4-44c2-a5ed-1c44d4776d2a"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                        </section>
+                  <section id="_mainTaskFlow">
+            <div class="page-header">
+                <h1>mainTaskFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainTaskFlow.png" usemap="#flowMapmainTaskFlow" alt="mainTaskFlow image">
+                <map name="flowMapmainTaskFlow">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainTaskFlowxml_code">
+                  Show configuration XML code of the flow mainTaskFlow...
+                </a>
+              </div>
+              <div id="_mainTaskFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainTaskFlow" doc:id="ab140abe-e530-4351-ae48-a17943db4c6b"&gt;  
+    &lt;choice doc:name="Choice" doc:id="1432e2df-ece6-48bd-8e51-18b266e94208"&gt; 
+        &lt;when expression="#[sizeOf(attributes.queryParams) != 0]"&gt; 
+            &lt;flow-ref doc:name="get Tasks Using Filter" doc:id="0d4b7e39-8363-42f0-805c-f2c16394aa15" name="getTaskOnFilterCondition"/&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;flow-ref doc:name="get All Tasks" doc:id="6686faf5-4387-455a-992f-c5a06cf3d4a3" name="getAllTasks"/&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="b4fc908d-c928-4e9b-aef8-0ed7037cc0eb"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_getTasksById">
+            <div class="page-header">
+                <h1>getTasksById <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getTasksById.png" usemap="#flowMapgetTasksById" alt="getTasksById image">
+                <map name="flowMapgetTasksById">
+                                                                                                                                                    </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getTasksByIdxml_code">
+                  Show configuration XML code of the flow getTasksById...
+                </a>
+              </div>
+              <div id="_getTasksByIdxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getTasksById" doc:id="815a9fb6-0ea8-41c1-8161-2a21d6eec916"&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="298297f5-8a6e-4bb5-970c-9050e75fceb9"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "taskId": if( attributes.uriParams.ID? ) attributes.uriParams.ID else vars.backup_payload.taskId
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;db:select doc:name="Select" doc:id="c37117f2-d757-4d68-988f-d7431125a5b3" config-ref="rdbms_master_db_config"&gt;  
+        &lt;reconnect/&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT * FROM view_taskmaster AS ms WHERE ms."TaskId" = :taskId]]&gt; &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'taskId' : payload.taskId}]]]&gt; &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="d459ae3a-bf80-4e2e-895f-171b83cf8243"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+output application/json
+---
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt;  
+        &lt;ee:variables&gt; 
+            &lt;ee:set-variable variableName="abc"&gt;&lt;![CDATA[%dw 2.0
+output application/java
+---
+payload.abc]]&gt;  &lt;/ee:set-variable&gt;
+            &lt;ee:set-variable variableName="task"&gt;&lt;![CDATA[%dw 2.0
+output application/java
+---
+payload.id]]&gt;   &lt;/ee:set-variable&gt;
+        &lt;/ee:variables&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                    </section>
+                  <section id="_getTaskActivity">
+            <div class="page-header">
+                <h1>getTaskActivity <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getTaskActivity.png" usemap="#flowMapgetTaskActivity" alt="getTaskActivity image">
+                <map name="flowMapgetTaskActivity">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getTaskActivityxml_code">
+                  Show configuration XML code of the flow getTaskActivity...
+                </a>
+              </div>
+              <div id="_getTaskActivityxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getTaskActivity" doc:id="b1039552-2f34-46ca-89fd-e0c76303833d"&gt;  
+    &lt;set-variable value="#[output application/json
+---
+if( attributes.uriParams.ID? ) attributes.uriParams.ID as Number else payload.taskId as Number]" doc:name="Set Variable" doc:id="1bd227d3-7d24-4574-bef4-1250fcd909f0" variableName="taskId"/&gt;
+    &lt;ee:transform doc:name="Transform Message" doc:id="47d4d7c5-08c3-4bfb-a577-798ef89408f2"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "taskId" : vars.taskId as Number
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;mongo:find-documents doc:name="Find documents" doc:id="e984de39-c227-429e-8ccf-ac68b1b54230" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection" fields=","&gt;  
+        &lt;mongo:query&gt;&lt;![CDATA[#[payload]]]&gt; &lt;/mongo:query&gt; 
+    &lt;/mongo:find-documents&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="5248b928-c28d-4c5c-9bb6-d2fedf43c2e5"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_getTaskByIdWithActivity">
+            <div class="page-header">
+                <h1>getTaskByIdWithActivity <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getTaskByIdWithActivity.png" usemap="#flowMapgetTaskByIdWithActivity" alt="getTaskByIdWithActivity image">
+                <map name="flowMapgetTaskByIdWithActivity">
+                                                                                                                                                                                                                                </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getTaskByIdWithActivityxml_code">
+                  Show configuration XML code of the flow getTaskByIdWithActivity...
+                </a>
+              </div>
+              <div id="_getTaskByIdWithActivityxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getTaskByIdWithActivity" doc:id="36dd90b7-165a-45be-9d74-d8b0652b5f55"&gt;  
+    &lt;set-variable value="#[attributes.queryParams]" doc:name="Set Variable" doc:id="91e42af4-95e5-4266-a051-1cbe1b3a67f6" variableName="backup_payload"/&gt;  
+    &lt;scatter-gather doc:name="Scatter-Gather" doc:id="5f6b025f-f9fa-4b71-8127-71dccc08263c"&gt; 
+        &lt;route&gt; 
+            &lt;flow-ref doc:name="getTasksById" doc:id="dc8adf47-eff2-4d21-bd5b-ca14787e26db" name="getTasksById"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;flow-ref doc:name="getTaskActivity" doc:id="973ca20c-21ed-4a05-a6ee-9d3412dcb63c" name="getTaskActivity"/&gt; 
+        &lt;/route&gt; 
+    &lt;/scatter-gather&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="5459bf62-037b-49eb-9dc8-0d3edf3a4256"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                        </section>
+                  <section id="_mainTaskById">
+            <div class="page-header">
+                <h1>mainTaskById <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainTaskById.png" usemap="#flowMapmainTaskById" alt="mainTaskById image">
+                <map name="flowMapmainTaskById">
+                                                                                                                                                    </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainTaskByIdxml_code">
+                  Show configuration XML code of the flow mainTaskById...
+                </a>
+              </div>
+              <div id="_mainTaskByIdxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainTaskById" doc:id="5de62e94-37c1-4f3f-8b0f-b574ac7d675c"&gt;  
+    &lt;choice doc:name="Choice" doc:id="71bdbe19-801c-47cc-b734-27aed0e10ca1"&gt; 
+        &lt;when expression="#[attributes.queryParams.activity == &amp;quot;false&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="getTasksById" doc:id="d5a224a1-e6d0-483d-995d-46aaa993de9a" name="getTasksById"/&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;flow-ref doc:name="getTaskByIdWithActivity" doc:id="1ab276d4-e5f0-45a0-b8cc-1ca4057cbfca" name="getTaskByIdWithActivity"/&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                    </section>
+                  <section id="_getUserBasedTaskSummary">
+            <div class="page-header">
+                <h1>getUserBasedTaskSummary <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getUserBasedTaskSummary.png" usemap="#flowMapgetUserBasedTaskSummary" alt="getUserBasedTaskSummary image">
+                <map name="flowMapgetUserBasedTaskSummary">
+                                                                                                                                                                                                                                                                                                                                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getUserBasedTaskSummaryxml_code">
+                  Show configuration XML code of the flow getUserBasedTaskSummary...
+                </a>
+              </div>
+              <div id="_getUserBasedTaskSummaryxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getUserBasedTaskSummary" doc:id="07b65bd5-bda9-49e4-aeb7-9630e4598ad2"&gt;  
+    &lt;scatter-gather doc:name="Scatter-Gather" doc:id="7a731926-11e0-4a47-9a82-9678bb4ff802"&gt; 
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="1f3449ae-eaf7-4b16-bf19-174f0640820a" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskOwner" = :userId ]]&gt;   &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload[0].count]" doc:name="Set Total Count" doc:id="118ee4db-c522-402b-90c4-4171de6293c7" variableName="totalCount"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="e2c23618-d63d-40f0-bda5-727c26383075" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('New' , 'In_Progress') AND "TaskOwner" = :userId ]]&gt;   &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload[0].count]" doc:name="Set Active Count" doc:id="771dfeb3-1079-4724-8d63-70afad2709f0" variableName="activeCount"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="5047e21e-c757-4889-8280-01d89c9fdfb5" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('Complete') AND "TaskOwner" = :userId ]]&gt;  &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload[0].count]" doc:name="Set Completed Count" doc:id="191e5da0-36ce-4458-b4cd-d90605b56e55" variableName="completedCount"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="61dcf0d8-c3e4-4c2a-a299-a30268e47e4e" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT "Module" , COUNT(0) FROM View_TaskMaster WHERE "TaskOwner" = :userId GROUP BY "Module"]]&gt;   &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload]" doc:name="Set Module Array" doc:id="4ca7dce6-7595-4c5a-a1a2-3630a0f7b97c" variableName="module"/&gt; 
+        &lt;/route&gt; 
+    &lt;/scatter-gather&gt;  
+    &lt;ee:transform doc:name="Extract payload from all outputs" doc:id="04c5d3df-3dd3-4880-8a0d-6fae216a1954"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    totalCount: vars.totalCount as String,
+
+    activeCount: vars.activeCount as String,
+
+    completedCount: vars.completedCount as String,
+
+    moduleData: vars.module
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                                                                                                                          </section>
+                  <section id="_getTaskSummary">
+            <div class="page-header">
+                <h1>getTaskSummary <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getTaskSummary.png" usemap="#flowMapgetTaskSummary" alt="getTaskSummary image">
+                <map name="flowMapgetTaskSummary">
+                                                                                                                                                                                                                                                                                                                                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getTaskSummaryxml_code">
+                  Show configuration XML code of the flow getTaskSummary...
+                </a>
+              </div>
+              <div id="_getTaskSummaryxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getTaskSummary" doc:id="57f5b681-ed08-4f97-aa56-750f51d60a11"&gt;  
+    &lt;scatter-gather doc:name="Scatter-Gather" doc:id="c7c893d1-afeb-4b49-a9ef-26076f37783a"&gt; 
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="e7892d2b-efb6-4ba1-8b9d-1b9d7ff79b63" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster]]&gt;    &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload[0].count]" doc:name="Set Total Count" doc:id="78bd55a4-cc80-4c54-9bca-f062b9814b7b" variableName="totalCount"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="89bdab24-5db8-45a5-a009-c9181f022ff4" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('New' , 'In_Progress')]]&gt;  &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload[0].count]" doc:name="Set Active Count" doc:id="1b37ce21-2392-40e4-b10e-55e640ecc098" variableName="activeCount"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="56d9277d-98e8-4a4b-93fd-254ab9267a19" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM View_TaskMaster WHERE "TaskStatus" IN ('Complete')]]&gt; &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload[0].count]" doc:name="Set Completed Count" doc:id="ab636d0b-3249-4e71-9718-25309c72bc33" variableName="completedCount"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;db:select doc:name="Select" doc:id="26a87efb-a512-4aa4-9d53-0f806ab450e8" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT "Module" , COUNT(0) FROM View_TaskMaster GROUP BY "Module"]]&gt;   &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt;  
+            &lt;set-variable value="#[payload]" doc:name="Set Module Array" doc:id="cddb44d9-ae27-480a-9705-18803670e811" variableName="module"/&gt; 
+        &lt;/route&gt; 
+    &lt;/scatter-gather&gt;  
+    &lt;ee:transform doc:name="Extract payload from all outputs" doc:id="019aca7e-e95b-4efd-b11f-9a936c802b76"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    totalCount: vars.totalCount as String,
+
+    activeCount: vars.activeCount as String,
+
+    completedCount: vars.completedCount as String,
+
+    moduleData: vars.module
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                                                                                                                          </section>
+                  <section id="_getDetailedTaskSummary">
+            <div class="page-header">
+                <h1>getDetailedTaskSummary <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getDetailedTaskSummary.png" usemap="#flowMapgetDetailedTaskSummary" alt="getDetailedTaskSummary image">
+                <map name="flowMapgetDetailedTaskSummary">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getDetailedTaskSummaryxml_code">
+                  Show configuration XML code of the flow getDetailedTaskSummary...
+                </a>
+              </div>
+              <div id="_getDetailedTaskSummaryxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getDetailedTaskSummary" doc:id="ee2ea5c9-3712-4d4f-ae46-580660590048"&gt;  
+    &lt;db:select doc:name="Select" doc:id="c39ca9c7-16f6-4387-879d-0b11f574b0bf" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskStatus" , count(0) FROM view_taskmaster GROUP BY "TaskStatus"]]&gt;   &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="f811fee2-39cf-4a63-81ae-cfd2ceac8f8e"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    totalCount: vars.totalCount as String,
+
+    activeCount: vars.activeCount as String,
+
+    completedCount: vars.completedCount as String,
+
+    moduleData: vars.module
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getUserBasedDetailedTaskSummary">
+            <div class="page-header">
+                <h1>getUserBasedDetailedTaskSummary <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getUserBasedDetailedTaskSummary.png" usemap="#flowMapgetUserBasedDetailedTaskSummary" alt="getUserBasedDetailedTaskSummary image">
+                <map name="flowMapgetUserBasedDetailedTaskSummary">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getUserBasedDetailedTaskSummaryxml_code">
+                  Show configuration XML code of the flow getUserBasedDetailedTaskSummary...
+                </a>
+              </div>
+              <div id="_getUserBasedDetailedTaskSummaryxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getUserBasedDetailedTaskSummary" doc:id="1b0494bd-665e-45f8-bf13-3ec3826f0a76"&gt;  
+    &lt;db:select doc:name="Select" doc:id="eb7c574a-17d1-4a7e-9ea7-da8c7976ae45" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskStatus" , count(0) FROM view_taskmaster WHERE "TaskAssigner" = :userId  GROUP BY "TaskStatus"]]&gt;   &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="eca1f818-9954-4b8a-a251-00730f9f1bc4"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_mainTaskSummaryFlow">
+            <div class="page-header">
+                <h1>mainTaskSummaryFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainTaskSummaryFlow.png" usemap="#flowMapmainTaskSummaryFlow" alt="mainTaskSummaryFlow image">
+                <map name="flowMapmainTaskSummaryFlow">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainTaskSummaryFlowxml_code">
+                  Show configuration XML code of the flow mainTaskSummaryFlow...
+                </a>
+              </div>
+              <div id="_mainTaskSummaryFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainTaskSummaryFlow" doc:id="914474bc-c36c-44b0-9ddc-2d80f9797612"&gt;  
+    &lt;choice doc:name="Choice" doc:id="02ec15de-dd6d-41db-9458-d55dc56d067f"&gt; 
+        &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.details == &amp;quot;false&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="Call getUserBasedTaskSummary" doc:id="124872e5-3793-4265-9ac8-1d2d677cc4d2" name="getUserBasedTaskSummary"/&gt; 
+        &lt;/when&gt;  
+        &lt;when expression="#[attributes.queryParams.userId == null and attributes.queryParams.details == &amp;quot;false&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="getTaskSummary" doc:id="feed2664-d1f8-4072-919d-09482bbf539f" name="getTaskSummary"/&gt; 
+        &lt;/when&gt;  
+        &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.details == &amp;quot;true&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="getUserBasedDetailedTaskSummary" doc:id="f5193c00-60ac-4ded-ab02-71fa5d22cc4a" name="getUserBasedDetailedTaskSummary"/&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;flow-ref doc:name="getTaskSummary" doc:id="17673152-7587-41ad-b639-6d36a4f530e2" name="getTaskSummary"/&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt;  
+    &lt;logger level="INFO" doc:name="Logger" doc:id="a5d76f03-abc1-41cf-90bf-0c73e567a6e4"/&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+                  <section id="_getVerificationCommits">
+            <div class="page-header">
+                <h1>getVerificationCommits <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getVerificationCommits.png" usemap="#flowMapgetVerificationCommits" alt="getVerificationCommits image">
+                <map name="flowMapgetVerificationCommits">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getVerificationCommitsxml_code">
+                  Show configuration XML code of the flow getVerificationCommits...
+                </a>
+              </div>
+              <div id="_getVerificationCommitsxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getVerificationCommits" doc:id="2f5ac52b-70e1-454e-b22f-71672afadd7c"&gt;  
+    &lt;choice doc:name="Choice" doc:id="84ab8c1b-cf89-4302-b409-eb05307adbb5"&gt; 
+        &lt;when expression="#[attributes.queryParams.userId != null]"&gt; 
+            &lt;db:select doc:name="Select" doc:id="79585296-d70f-408b-9d38-03ac3e1eb193" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskAssigner" = :userId  AND "TaskStatus" = 'Self_Commit']]&gt; &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;db:select doc:name="Select" doc:id="64c3519a-033b-459a-a8e3-aaa4479d9322" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskStatus" = 'Self_Commit']]&gt;   &lt;/db:sql&gt; 
+            &lt;/db:select&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="dac30709-c178-4240-a306-b5ae1975d6e5"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_getVerificationDeletes">
+            <div class="page-header">
+                <h1>getVerificationDeletes <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getVerificationDeletes.png" usemap="#flowMapgetVerificationDeletes" alt="getVerificationDeletes image">
+                <map name="flowMapgetVerificationDeletes">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getVerificationDeletesxml_code">
+                  Show configuration XML code of the flow getVerificationDeletes...
+                </a>
+              </div>
+              <div id="_getVerificationDeletesxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getVerificationDeletes" doc:id="4e8d9e74-229c-45e3-8b19-59faf43d71b3"&gt;  
+    &lt;choice doc:name="Choice" doc:id="c6622fc4-2dbb-45fb-a0fb-d3bb92557578"&gt; 
+        &lt;when expression="#[attributes.queryParams.userId != null]"&gt; 
+            &lt;db:select doc:name="Select" doc:id="89c20924-58cb-4c3f-9fe9-21815b18efde" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskAssigner" = :userId  AND "TaskStatus" = 'Self_Delete']]&gt; &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+            &lt;/db:select&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;db:select doc:name="Select" doc:id="f8b79979-8304-4228-9f02-f5350fbae214" config-ref="rdbms_master_db_config"&gt;  
+                &lt;reconnect/&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[SELECT "TaskId", "Title", "Module" , "TaskStatus" FROM View_TaskMaster WHERE "TaskStatus" = 'Self_Delete']]&gt;   &lt;/db:sql&gt; 
+            &lt;/db:select&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="675e8132-6a20-4221-a010-79c43571ff97"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_mainTaskVerificationFlow">
+            <div class="page-header">
+                <h1>mainTaskVerificationFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainTaskVerificationFlow.png" usemap="#flowMapmainTaskVerificationFlow" alt="mainTaskVerificationFlow image">
+                <map name="flowMapmainTaskVerificationFlow">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainTaskVerificationFlowxml_code">
+                  Show configuration XML code of the flow mainTaskVerificationFlow...
+                </a>
+              </div>
+              <div id="_mainTaskVerificationFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainTaskVerificationFlow" doc:id="aed3231c-1f3d-48e2-a241-4fe4106b01d6"&gt;  
+    &lt;scatter-gather doc:name="Scatter-Gather" doc:id="0bfae903-5a6c-41e7-911c-687077ecd56b"&gt; 
+        &lt;route&gt; 
+            &lt;flow-ref doc:name="get Verification Commits" doc:id="1fc248df-8751-4eac-b3ed-ba639002687b" name="getVerificationCommits"/&gt; 
+        &lt;/route&gt;  
+        &lt;route&gt; 
+            &lt;flow-ref doc:name="get Verification Deletes" doc:id="60a5ff50-d2ce-409b-ac2d-9eb9820f9c81" name="getVerificationDeletes"/&gt; 
+        &lt;/route&gt; 
+    &lt;/scatter-gather&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="72c7bf48-cfa1-4afd-8bf6-224a84d8524a"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+flatten(payload..payload)]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_getUserBasedRCSUtilization">
+            <div class="page-header">
+                <h1>getUserBasedRCSUtilization <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getUserBasedRCSUtilization.png" usemap="#flowMapgetUserBasedRCSUtilization" alt="getUserBasedRCSUtilization image">
+                <map name="flowMapgetUserBasedRCSUtilization">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getUserBasedRCSUtilizationxml_code">
+                  Show configuration XML code of the flow getUserBasedRCSUtilization...
+                </a>
+              </div>
+              <div id="_getUserBasedRCSUtilizationxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getUserBasedRCSUtilization" doc:id="206a506a-1f4f-4af1-9dc8-8bc845638895"&gt;  
+    &lt;db:select doc:name="Select" doc:id="7c6ed62f-221b-4b9d-bcaf-4d3b333cca2e" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "Title" , "DateTerminated" , "TaskStatus" , "OwnerName" FROM view_taskmaster WHERE "TaskAssigner" = :userId]]&gt;  &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="0472a294-4bac-4057-b802-d5f82894f42e"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getAllRCSUtilization">
+            <div class="page-header">
+                <h1>getAllRCSUtilization <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getAllRCSUtilization.png" usemap="#flowMapgetAllRCSUtilization" alt="getAllRCSUtilization image">
+                <map name="flowMapgetAllRCSUtilization">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getAllRCSUtilizationxml_code">
+                  Show configuration XML code of the flow getAllRCSUtilization...
+                </a>
+              </div>
+              <div id="_getAllRCSUtilizationxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getAllRCSUtilization" doc:id="03db69af-b7e3-4b70-94a8-772faa6912af"&gt;  
+    &lt;db:select doc:name="Select" doc:id="e41cc69d-d70f-4c3d-81b0-fe21d903ea98" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "Title" , "DateTerminated" , "TaskStatus" , "OwnerName" FROM view_taskmaster]]&gt; &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="9fdda18c-8f7e-4451-b833-4435aeb688d6"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getUserBasedRCSSummary">
+            <div class="page-header">
+                <h1>getUserBasedRCSSummary <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getUserBasedRCSSummary.png" usemap="#flowMapgetUserBasedRCSSummary" alt="getUserBasedRCSSummary image">
+                <map name="flowMapgetUserBasedRCSSummary">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getUserBasedRCSSummaryxml_code">
+                  Show configuration XML code of the flow getUserBasedRCSSummary...
+                </a>
+              </div>
+              <div id="_getUserBasedRCSSummaryxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getUserBasedRCSSummary" doc:id="e7d0e391-5f07-4297-8615-e59dc616bf68"&gt;  
+    &lt;db:select doc:name="Select" doc:id="618108e4-9f62-4edd-ad74-18af8354cd31" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "OwnerName" , count(0) FROM view_taskmaster WHERE "TaskAssigner" = :userId GROUP BY "OwnerName"]]&gt;  &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.queryParams.userId}]]]&gt;  &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="b3d76325-4e9f-4be7-9ff2-9c2c96961f79"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getAllRCSSummary">
+            <div class="page-header">
+                <h1>getAllRCSSummary <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getAllRCSSummary.png" usemap="#flowMapgetAllRCSSummary" alt="getAllRCSSummary image">
+                <map name="flowMapgetAllRCSSummary">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getAllRCSSummaryxml_code">
+                  Show configuration XML code of the flow getAllRCSSummary...
+                </a>
+              </div>
+              <div id="_getAllRCSSummaryxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getAllRCSSummary" doc:id="6d11b02c-61bc-4838-913c-444d6ac0773b"&gt;  
+    &lt;db:select doc:name="Select" doc:id="2915602e-134c-4fd8-9126-b5993a70a697" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "OwnerName" , count(0) FROM view_taskmaster GROUP BY "OwnerName"]]&gt; &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="2b011f1a-0a78-4dc0-826a-c8640040239f"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_mainTaskRCSUtilizationFlow">
+            <div class="page-header">
+                <h1>mainTaskRCSUtilizationFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainTaskRCSUtilizationFlow.png" usemap="#flowMapmainTaskRCSUtilizationFlow" alt="mainTaskRCSUtilizationFlow image">
+                <map name="flowMapmainTaskRCSUtilizationFlow">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainTaskRCSUtilizationFlowxml_code">
+                  Show configuration XML code of the flow mainTaskRCSUtilizationFlow...
+                </a>
+              </div>
+              <div id="_mainTaskRCSUtilizationFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainTaskRCSUtilizationFlow" doc:id="3eaaff66-5f30-4468-a48d-2bc76ef5e11a"&gt;  
+    &lt;choice doc:name="Choice" doc:id="d3a0816d-0deb-444f-a251-5418c6850d79"&gt; 
+        &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.summary == &amp;quot;false&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="getUserBasedRCSUtilization" doc:id="d664b675-c8a5-4696-8cda-2829d98aff25" name="getUserBasedRCSUtilization"/&gt; 
+        &lt;/when&gt;  
+        &lt;when expression="#[attributes.queryParams.userId == null and attributes.queryParams.summary == &amp;quot;false&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="getAllRCSUtilization" doc:id="b2fa9aa7-5d8b-431c-81ff-df678231c9ff" name="getAllRCSUtilization"/&gt; 
+        &lt;/when&gt;  
+        &lt;when expression="#[attributes.queryParams.userId != null and attributes.queryParams.summary == &amp;quot;true&amp;quot;]"&gt; 
+            &lt;flow-ref doc:name="getUserBasedRCSSummary" doc:id="ab2bd87d-dd57-42c1-a141-4f0d660c7580" name="getUserBasedRCSSummary"/&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;flow-ref doc:name="getAllRCSSummary" doc:id="f8cbdb19-8eb2-4c35-b0e7-1fe1b7f965b0" name="getAllRCSSummary"/&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="2d6c9086-5e24-44c7-83e0-cb48836df489"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+                  <section id="_createNewTask">
+            <div class="page-header">
+                <h1>createNewTask <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/createNewTask.png" usemap="#flowMapcreateNewTask" alt="createNewTask image">
+                <map name="flowMapcreateNewTask">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_createNewTaskxml_code">
+                  Show configuration XML code of the flow createNewTask...
+                </a>
+              </div>
+              <div id="_createNewTaskxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="createNewTask" doc:id="5aacc7a1-772c-428e-822f-bba7636e400d"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="5dd14675-65de-4bad-954e-803712a01c56" variableName="backup_payload"/&gt;  
+    &lt;flow-ref doc:name="generateNewId" doc:id="61d310ed-f4ef-4c28-b088-dfef5cedfe8b" name="generateNewId"/&gt;  
+    &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+vars.backup_payload ++ {&amp;quot;taskId&amp;quot; : payload.nextval}]" doc:name="Reset backup_payload" doc:id="546b7dfe-d286-44af-a329-ede015fa0a4b" variableName="backup_payload"/&gt;
+    &lt;try doc:name="Try" doc:id="70b41131-bdc3-4406-9c22-cf86938b5d64" transactionalAction="ALWAYS_BEGIN"&gt; 
+        &lt;db:insert doc:name="Task_Master Insert" doc:id="3c34235d-8bd2-4a40-8021-1ec54594fa14" config-ref="rdbms_master_db_config"&gt;  
+            &lt;db:sql&gt;&lt;![CDATA[INSERT INTO task_master ( "TaskId", "ProjectId", "Module", "Title", "Description", "DateTerminated", "Owner", "Assigner", "TaskStatus", "Type", "Priority", "DateCreated") VALUES ( :taskid , :projectid , :moduleid , :title , :description , :dateterminated , :owner , :assigner , :taskstatus , :type , :priority , CURRENT_DATE)]]&gt;   &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "taskid" : vars.backup_payload.taskId,
+
+    "projectid" : vars.backup_payload.projectId,
+
+    "moduleid" : vars.backup_payload.module,
+
+    "title" : vars.backup_payload.title,
+
+    "description" : vars.backup_payload.description,
+
+    "dateterminated" : vars.backup_payload.dateTerminated,
+
+    "owner" : vars.backup_payload.owner,
+
+    "assigner" : vars.backup_payload.assigner,
+
+    "taskstatus" : vars.backup_payload.taskStatus,
+
+    "type" : vars.backup_payload."type",
+
+    "priority" : vars.backup_payload.priority
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:insert&gt;  
+        &lt;mongo:insert-document doc:name="Activity Insert" doc:id="cef59240-0a77-49d6-a50c-ed0a25725f1d" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection"&gt;  
+            &lt;mongo:document&gt;&lt;![CDATA[#[{"taskId" : vars.backup_payload.taskId} ++ {"activity" : []}]]]&gt; &lt;/mongo:document&gt; 
+        &lt;/mongo:insert-document&gt; 
+    &lt;/try&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+                  <section id="_updateTaskFields">
+            <div class="page-header">
+                <h1>updateTaskFields <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/updateTaskFields.png" usemap="#flowMapupdateTaskFields" alt="updateTaskFields image">
+                <map name="flowMapupdateTaskFields">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_updateTaskFieldsxml_code">
+                  Show configuration XML code of the flow updateTaskFields...
+                </a>
+              </div>
+              <div id="_updateTaskFieldsxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;sub-flow name="updateTaskFields" doc:id="957e19ea-0bc4-4882-87f0-1ece9ded32f2"&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="f0109c26-8d2a-4d7d-8fb0-c327ae881917"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    taskId : payload.taskId,
+
+    field: payload.field,
+
+    fieldValue: payload.fieldValue
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+&amp;quot;UPDATE task_master SET \&amp;quot;&amp;quot; ++ payload.field ++ &amp;quot;\&amp;quot; = '&amp;quot; ++ payload.fieldValue ++ &amp;quot;' WHERE \&amp;quot;TaskId\&amp;quot; = '&amp;quot; ++ payload.taskId ++ &amp;quot;'&amp;quot;]" doc:name="Set Variable" doc:id="423c548b-7af3-426a-a282-a53d1304733c" variableName="query"/&gt;
+    &lt;db:update doc:name="Task_Master Update" doc:id="a8d3145c-d694-49d9-87dc-d006f3ce2fa4" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[#[vars.query]]]&gt;   &lt;/db:sql&gt; 
+    &lt;/db:update&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="71a25e32-85c4-4510-b09c-80e4dbeb2cb8"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/sub-flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_updateTaskActivity">
+            <div class="page-header">
+                <h1>updateTaskActivity <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/updateTaskActivity.png" usemap="#flowMapupdateTaskActivity" alt="updateTaskActivity image">
+                <map name="flowMapupdateTaskActivity">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_updateTaskActivityxml_code">
+                  Show configuration XML code of the flow updateTaskActivity...
+                </a>
+              </div>
+              <div id="_updateTaskActivityxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;sub-flow name="updateTaskActivity" doc:id="c98b9487-d6a3-49b6-a5f5-dd4d0cb96c76"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set Variable" doc:id="6af9742b-e06f-43c7-93c6-ef72293d9731" variableName="incomingData"/&gt;  
+    &lt;flow-ref doc:name="getTaskActivity" doc:id="fb7e22b2-da1a-490b-997c-8a897ad71595" name="getTaskActivity"/&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="a7711fbd-b318-410c-8f20-91c3096e62b7"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+
+
+var arrData = payload.activity  &lt;   &lt; vars.incomingData
+
+---
+
+{
+
+    query: {"taskId" : payload.taskId},
+
+    updateObj: {activity: arrData}
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;mongo:update-documents doc:name="Update documents" doc:id="7e0e3466-754d-49a0-9b9a-bc827f00083a" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection"&gt;  
+        &lt;mongo:query&gt;&lt;![CDATA[#[payload.query]]]&gt;   &lt;/mongo:query&gt;  
+        &lt;mongo:content-to-update&gt;&lt;![CDATA[#[payload.updateObj]]]&gt;   &lt;/mongo:content-to-update&gt; 
+    &lt;/mongo:update-documents&gt; 
+&lt;/sub-flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_mainUpdateTaskFlow">
+            <div class="page-header">
+                <h1>mainUpdateTaskFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainUpdateTaskFlow.png" usemap="#flowMapmainUpdateTaskFlow" alt="mainUpdateTaskFlow image">
+                <map name="flowMapmainUpdateTaskFlow">
+                                                                                                                                                                                                                                                                                                            </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainUpdateTaskFlowxml_code">
+                  Show configuration XML code of the flow mainUpdateTaskFlow...
+                </a>
+              </div>
+              <div id="_mainUpdateTaskFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainUpdateTaskFlow" doc:id="ee5e16f7-9420-4971-ac05-d3c69faf21fc"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="55740c98-7a69-4c40-b397-38c6447da31a" variableName="backup_payload"/&gt;  
+    &lt;set-variable value="#[%dw 2.0
+import * from dw::core::Strings
+output application/json
+---
+&amp;quot;SELECT \&amp;quot;&amp;quot; ++ capitalize(vars.backup_payload.field) ++ &amp;quot;\&amp;quot; as dataValue FROM task_master WHERE \&amp;quot;TaskId\&amp;quot; = &amp;quot; ++ vars.backup_payload.taskId]" doc:name="Set oldDataQuery" doc:id="d5da3918-a66b-49f0-b74d-f53126eb81d2" variableName="oldDataQuery"/&gt;
+    &lt;db:select doc:name="Select" doc:id="9fd7ca94-39f9-4b02-9aa1-9b962bd421a6" config-ref="rdbms_master_db_config" target="oldData" targetValue="#[payload[0].datavalue]"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[#[vars.oldDataQuery]]]&gt;    &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="5b6824f3-fc3a-42a4-b850-2262d03f64fd"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+vars.backup_payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;flow-ref doc:name="updateTaskFields" doc:id="f84156d2-c460-465f-8085-82288bfe82cd" name="updateTaskFields"/&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="7cca9d3c-0df2-4866-b8ec-b661d1983abc"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    taskId: vars.backup_payload.taskId,
+
+    userNameBy: vars.backup_payload.userName,
+
+    userId: vars.backup_payload.userId,
+
+    dateUpdated: now(),
+
+    updateType: vars.backup_payload.field,
+
+    update: {
+
+        oldValue: vars.oldData,     
+
+        newValue: vars.backup_payload.fieldValue
+
+    }
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;flow-ref doc:name="updateTaskActivity" doc:id="f345f54d-dee1-4473-bc81-ee760691ad40" name="updateTaskActivity"/&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                                            </section>
+                  <section id="_deleteTaskFlow">
+            <div class="page-header">
+                <h1>deleteTaskFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/deleteTaskFlow.png" usemap="#flowMapdeleteTaskFlow" alt="deleteTaskFlow image">
+                <map name="flowMapdeleteTaskFlow">
+                                                                                                                                                                                                                                                                                                                                                  </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_deleteTaskFlowxml_code">
+                  Show configuration XML code of the flow deleteTaskFlow...
+                </a>
+              </div>
+              <div id="_deleteTaskFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="deleteTaskFlow" doc:id="9d9b0b93-2c93-49f8-8ec8-be62295d4641"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="454fa9ef-ae56-4970-bea0-865c6e7a397b" variableName="backup_payload"/&gt;  
+    &lt;db:select doc:name="Select" doc:id="5a53a3f4-af5a-40b6-be4b-72b0ce13e97a" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM task_master WHERE "TaskId" = :taskid AND "TaskStatus" IN ('Complete' , 'Delete')]]&gt;   &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "taskid" : vars.backup_payload.ID
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="93f65212-2b91-44de-8597-5fda973aa42f"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;choice doc:name="Choice" doc:id="2240e4e1-2bbc-4319-976f-709551424a06"&gt; 
+        &lt;when expression="#[payload.count != 0]"&gt; 
+            &lt;try doc:name="Try" doc:id="24e61e34-36b3-4f5f-8f2e-4a1a890de450" transactionalAction="ALWAYS_BEGIN"&gt; 
+                &lt;db:delete doc:name="Delete" doc:id="19c80756-5c3d-422d-8d42-1fd5318fdf4b" config-ref="rdbms_master_db_config"&gt;  
+                    &lt;db:sql&gt;&lt;![CDATA[DELETE FROM task_master WHERE "TaskId" = :taskid]]&gt;    &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "taskid" : vars.backup_payload.ID
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+                &lt;/db:delete&gt;  
+                &lt;mongo:remove-documents doc:name="Remove documents" doc:id="92f2fb7b-b2a6-4c80-b375-2c2d6643dfb5" config-ref="MongoDB_Config" collectionName="ETMHistoryCollection"&gt;  
+                    &lt;mongo:query&gt;&lt;![CDATA[#[{
+
+    "taskId" : vars.backup_payload.ID
+
+}]]]&gt;   &lt;/mongo:query&gt;
+                &lt;/mongo:remove-documents&gt; 
+            &lt;/try&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;ee:transform doc:name="Transform Message" doc:id="984c5107-0667-4fe3-8dd9-815f1142c028"&gt;  
+                &lt;ee:message&gt; 
+                    &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Task not found"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                &lt;/ee:message&gt; 
+            &lt;/ee:transform&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                                                                      </section>
+              </div>
+    </div>
+  </div>
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with <a href="http://www.mulesoft.com/mule-studio/" target="_blank">Anypoint Studio</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blogs.mulesoft.org/">Read the blog</a></li>
+          <li><a href="http://www.mulesoft.org/jira/browse/">Submit issues</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/widgets.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script src="assets/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap-affix.js"></script>
+    <script src="assets/scroller.js"></script>
+    <script src="assets/application.js"></script>
+
+</body>
+</html>

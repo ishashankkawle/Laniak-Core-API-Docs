@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>laniak-core-api · Anypoint Studio Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <link href="assets/prettify.css" rel="stylesheet">
+    <link href="assets/scroller.css" rel="stylesheet">
+
+  </head>
+
+  <body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar"><iframe style="display: none;" id="rufous-sandbox" name="uid13460061790411"></iframe>
+
+    <!-- Navbar
+    ================================================== -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand pull-left" href="#">laniak-core-api</a>
+          <p class="navbar-text pull-right">
+              <a href="http://www.mulesoft.com" class="navbar-link">
+                <img src="./assets/images/mulesoft-logo-final.png" alt="MuleSoft" id="mulesoftlogo">
+              </a>
+          </p>
+          <div class="scroller scroller-left"><img src="./assets/icons/glyphicons_chevron-left.png" alt="scrollLeft"></div>
+          <div class="scroller scroller-right"><img src="./assets/icons/glyphicons_chevron-right.png" alt="scrollRight"></div>
+          <div class="wrapper">
+            <ul class="nav nav-tabs list" id="myTab">
+                                                                    <li><a href="./index.html">module_api_implementation</a></li>
+                                                                                                            <li><a href="./user_api_implementation.html">user_api_implementation</a></li>
+                                                                                                              <li><a href="./typeProjectMap_api_implementation.html">typeProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./moduleProjectMap_api_implementation.html">moduleProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./task_api_implementation.html">task_api_implementation</a></li>
+                                                                                                              <li><a href="./userProjectMap_api_implementation.html">userProjectMap_api_implementation</a></li>
+                                                                                                              <li class="active"><a href="./role_api_implementation.html">role_api_implementation</a></li>
+                                                                                                              <li><a href="./common.html">common</a></li>
+                                                                                                              <li><a href="./interface.html">interface</a></li>
+                                                                                                              <li><a href="./priorityProjectMap_api_implementation.html">priorityProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./global.html">global</a></li>
+                                                                                                              <li><a href="./type_api_implementation.html">type_api_implementation</a></li>
+                                                                                                              <li><a href="./priority_api_implementation.html">priority_api_implementation</a></li>
+                                                                                                              <li><a href="./project_api_implementation.html">project_api_implementation</a></li>
+                                                                                                              <li><a href="./activityworkflow_api_implementation.html">activityworkflow_api_implementation</a></li>
+                                                                </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>laniak-core-api</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="nav-header">Flows</li>
+                      <li data-toggle="collapse" data-target="#_getAllRolesNav"><a href="#_getAllRoles"><i class="icon-chevron-right"></i> getAllRoles</a>
+            </li>
+            <div id="_getAllRolesNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getRoleIdFromUserIdNav"><a href="#_getRoleIdFromUserId"><i class="icon-chevron-right"></i> getRoleIdFromUserId</a>
+            </li>
+            <div id="_getRoleIdFromUserIdNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getValidRoleListNav"><a href="#_getValidRoleList"><i class="icon-chevron-right"></i> getValidRoleList</a>
+            </li>
+            <div id="_getValidRoleListNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_getSmallerRolesNav"><a href="#_getSmallerRoles"><i class="icon-chevron-right"></i> getSmallerRoles</a>
+            </li>
+            <div id="_getSmallerRolesNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_mainRoleFlowNav"><a href="#_mainRoleFlow"><i class="icon-chevron-right"></i> mainRoleFlow</a>
+            </li>
+            <div id="_mainRoleFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                    </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_createNewRoleNav"><a href="#_createNewRole"><i class="icon-chevron-right"></i> createNewRole</a>
+            </li>
+            <div id="_createNewRoleNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_updateRoleFlowNav"><a href="#_updateRoleFlow"><i class="icon-chevron-right"></i> updateRoleFlow</a>
+            </li>
+            <div id="_updateRoleFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                          </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_deleteRoleFlowNav"><a href="#_deleteRoleFlow"><i class="icon-chevron-right"></i> deleteRoleFlow</a>
+            </li>
+            <div id="_deleteRoleFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                  </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Elements and their descriptions
+        ================================================== -->
+        <div style="max-height: 640px;width:100%;overflow:auto;">
+                      <img src="img/role_api_implementation.png" usemap="#mFlowMap" alt="Mule Configuration Image">
+            <map name="mFlowMap">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </map>
+                  </div>
+        <!--Mule configuration xml code-->
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapseMuleConfiguration">
+            Show Mule Configuration XML code...
+          </a>
+        </div>
+        <div id="collapseMuleConfiguration" class="accordion-body collapse" style="height: 0px;">
+          <div class="accordion-inner">
+              <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd"&gt;
+    &lt;flow name="getAllRoles" doc:id="8cc33f2c-98fb-4d03-9ed5-b4e2e6da54b2"&gt; 
+        &lt;db:select doc:name="Select" doc:id="d5e79dab-5fd9-4237-b64b-79282363b2b0" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "RoleName" , "SecurityLevel" FROM Role_Master Order By "SecurityLevel" ASC]]&gt;   &lt;/db:sql&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="d359bcc1-2576-401a-ba7e-8a652897b571"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getRoleIdFromUserId" doc:id="91168764-a0ae-439a-9e29-35614b4b3420"&gt; 
+        &lt;db:select doc:name="Select" doc:id="23921d87-cdc6-4ce7-9579-b0a09d46d762" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "UserId" , "Name" , "RoleId" , "RoleName" FROM View_UserProjectMap WHERE "UserId" = :userId]]&gt;  &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.urlParams.ID}]]]&gt;    &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="23e3aace-0593-4b6e-a198-09c0aac34e85"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getValidRoleList" doc:id="a34f3c40-2a0d-45ad-868e-561b730e2cda"&gt; 
+        &lt;db:select doc:name="Select" doc:id="2d3b7e86-ccba-49cc-98c6-ea500a557416" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "RoleId" , "RoleName" FROM role_master WHERE "SecurityLevel" &gt; :smallRole AND "SecurityLevel"   &lt; :highRole]]&gt;  &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'smallRole' : attributes.queryParams.updaterroleid , 'highRole' : attributes.queryParams.userroleid}]]]&gt;   &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="554b957b-b603-4eda-8f55-a1f461ed486b"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="getSmallerRoles" doc:id="ebdd5381-7461-41ec-92cd-c7c65a5eba1f"&gt; 
+        &lt;db:select doc:name="Select" doc:id="f38a1146-d821-4ce6-8680-70ffb869ed06" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT "RoleId" , "RoleName" FROM role_master WHERE "SecurityLevel" &gt; :smallRole]]&gt;    &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{'smallRole' : attributes.queryParams.userroleid}]]]&gt;   &lt;/db:input-parameters&gt; 
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="c8b8c517-c85d-4dbb-a50f-d90b9071cca8"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="mainRoleFlow" doc:id="966c8905-b024-4b87-bd85-61484e7e46c1"&gt; 
+        &lt;choice doc:name="Choice" doc:id="81c4fbce-c99a-4111-ab11-843cfa4dcf55"&gt; 
+            &lt;when expression="#[attributes.queryParams.userId != null]"&gt; 
+                &lt;flow-ref doc:name="getRoleIdFromUserId" doc:id="dafab1e5-eddc-45fa-9cb1-15143a48353d" name="getRoleIdFromUserId"/&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;flow-ref doc:name="getAllRoles" doc:id="9e0fc3bc-d670-45dc-8e91-e64367f5e1e1" name="getAllRoles"/&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="createNewRole" doc:id="b2090f43-5d49-41e1-be9e-9fac461f16ca"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="5dc359a0-1f56-435c-9edc-0bbf5bb935da" variableName="backup_payload"/&gt;  
+        &lt;flow-ref doc:name="generateNewId" doc:id="6e70f7bd-bdbb-45b9-94c9-e703afa8141c" name="generateNewId"/&gt;  
+        &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+vars.backup_payload default{} ++ {&amp;quot;roleId&amp;quot; : payload.nextval}]" doc:name="Reset backup_payload" doc:id="28e7c06d-16ef-48b1-9243-ebc73c7fcc17" variableName="backup_payload"/&gt;
+        &lt;try doc:name="Try" doc:id="98399c19-11e8-4e76-a229-7bab8e6936bf"&gt; 
+            &lt;db:insert doc:name="Role_Master Insert" doc:id="fb18b09a-befb-4b41-af74-53cb93c16617" config-ref="rdbms_master_db_config"&gt; 
+                &lt;db:sql&gt;&lt;![CDATA[INSERT INTO role_master ("RoleId", "RoleName", "SecurityLevel") VALUES (:roleid , :rolename , :securitylevel)]]&gt;   &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "roleid" : vars.backup_payload.roleId,
+
+    "rolename" : vars.backup_payload.roleName,
+
+    "securitylevel" : vars.backup_payload.securityLevel
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+            &lt;/db:insert&gt; 
+        &lt;/try&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="c8a00454-bc27-4a84-8abc-6b1666c16f3d"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="updateRoleFlow" doc:id="b24d008d-800c-4dae-9323-6b96a240098e"&gt; 
+        &lt;ee:transform doc:name="Transform Message" doc:id="86f41625-dd4c-4c7a-9092-08423830f827"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "roleId" : payload.roleId,
+
+    "field" : payload.field,
+
+    "fieldValue" : payload.fieldValue
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;set-payload value="#[&amp;quot;UPDATE role_master SET \&amp;quot;&amp;quot; ++ payload.field ++ &amp;quot;\&amp;quot; = '&amp;quot; ++ payload.fieldValue ++ &amp;quot;' WHERE \&amp;quot;RoleId\&amp;quot; = '&amp;quot;++ payload.roleId ++&amp;quot;'&amp;quot;]" doc:name="Set Payload" doc:id="97175176-01e5-4d46-b517-f52e7f9fee2b"/&gt;  
+        &lt;db:update doc:name="Update" doc:id="93a7d0d1-6f2f-43d5-beb4-abc87df949a6" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[#[payload]]]&gt;  &lt;/db:sql&gt; 
+        &lt;/db:update&gt;  
+        &lt;logger level="INFO" doc:name="Logger" doc:id="72e13ebc-91a4-47d9-824e-c0251430914a" message="#[payload]"/&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="deleteRoleFlow" doc:id="8d8b2d37-23de-436b-a200-7a2b05df99be"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="bc286c27-7108-42e7-95e2-04f5a273deee" variableName="backup_payload"/&gt;  
+        &lt;db:select doc:name="Select" doc:id="6f7e0413-a7cb-444e-81c9-2088c9db3a52" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM user_master WHERE "RoleId" = :roleid]]&gt;   &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "roleid" : vars.backup_payload.roleId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="ed3ade8c-8cc8-4083-b652-2afd51b99337"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;choice doc:name="Choice" doc:id="d64ee9bd-3a74-4f55-8dee-330dffcd9409"&gt; 
+            &lt;when expression="#[payload.count == 0]"&gt; 
+                &lt;db:delete doc:name="Delete" doc:id="a51ea8ad-b7ad-403b-b577-911c93b90af7" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;db:sql&gt;&lt;![CDATA[DELETE FROM role_master WHERE "RoleId" = :roleid]]&gt;    &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "roleid" : vars.backup_payload.roleId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+                &lt;/db:delete&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;ee:transform doc:name="Transform Message" doc:id="df2cbd2a-e160-4179-9876-a47c57cf0c81"&gt; 
+                    &lt;ee:message&gt; 
+                        &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Failed to remove role as some users are associated with Role. Please change ROles of associated users and try again"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                    &lt;/ee:message&gt; 
+                &lt;/ee:transform&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt; 
+&lt;/mule&gt;
+</code></pre>
+
+          </div>
+        </div>
+
+                  <section id="_getAllRoles">
+            <div class="page-header">
+                <h1>getAllRoles <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getAllRoles.png" usemap="#flowMapgetAllRoles" alt="getAllRoles image">
+                <map name="flowMapgetAllRoles">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getAllRolesxml_code">
+                  Show configuration XML code of the flow getAllRoles...
+                </a>
+              </div>
+              <div id="_getAllRolesxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getAllRoles" doc:id="8cc33f2c-98fb-4d03-9ed5-b4e2e6da54b2"&gt;  
+    &lt;db:select doc:name="Select" doc:id="d5e79dab-5fd9-4237-b64b-79282363b2b0" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "RoleName" , "SecurityLevel" FROM Role_Master Order By "SecurityLevel" ASC]]&gt;   &lt;/db:sql&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="d359bcc1-2576-401a-ba7e-8a652897b571"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getRoleIdFromUserId">
+            <div class="page-header">
+                <h1>getRoleIdFromUserId <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getRoleIdFromUserId.png" usemap="#flowMapgetRoleIdFromUserId" alt="getRoleIdFromUserId image">
+                <map name="flowMapgetRoleIdFromUserId">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getRoleIdFromUserIdxml_code">
+                  Show configuration XML code of the flow getRoleIdFromUserId...
+                </a>
+              </div>
+              <div id="_getRoleIdFromUserIdxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getRoleIdFromUserId" doc:id="91168764-a0ae-439a-9e29-35614b4b3420"&gt;  
+    &lt;db:select doc:name="Select" doc:id="23921d87-cdc6-4ce7-9579-b0a09d46d762" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "UserId" , "Name" , "RoleId" , "RoleName" FROM View_UserProjectMap WHERE "UserId" = :userId]]&gt;  &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'userId' : attributes.urlParams.ID}]]]&gt;    &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="23e3aace-0593-4b6e-a198-09c0aac34e85"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getValidRoleList">
+            <div class="page-header">
+                <h1>getValidRoleList <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getValidRoleList.png" usemap="#flowMapgetValidRoleList" alt="getValidRoleList image">
+                <map name="flowMapgetValidRoleList">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getValidRoleListxml_code">
+                  Show configuration XML code of the flow getValidRoleList...
+                </a>
+              </div>
+              <div id="_getValidRoleListxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getValidRoleList" doc:id="a34f3c40-2a0d-45ad-868e-561b730e2cda"&gt;  
+    &lt;db:select doc:name="Select" doc:id="2d3b7e86-ccba-49cc-98c6-ea500a557416" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "RoleId" , "RoleName" FROM role_master WHERE "SecurityLevel" &gt; :smallRole AND "SecurityLevel"   &lt; :highRole]]&gt;  &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'smallRole' : attributes.queryParams.updaterroleid , 'highRole' : attributes.queryParams.userroleid}]]]&gt;   &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="554b957b-b603-4eda-8f55-a1f461ed486b"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_getSmallerRoles">
+            <div class="page-header">
+                <h1>getSmallerRoles <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/getSmallerRoles.png" usemap="#flowMapgetSmallerRoles" alt="getSmallerRoles image">
+                <map name="flowMapgetSmallerRoles">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_getSmallerRolesxml_code">
+                  Show configuration XML code of the flow getSmallerRoles...
+                </a>
+              </div>
+              <div id="_getSmallerRolesxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="getSmallerRoles" doc:id="ebdd5381-7461-41ec-92cd-c7c65a5eba1f"&gt;  
+    &lt;db:select doc:name="Select" doc:id="f38a1146-d821-4ce6-8680-70ffb869ed06" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT "RoleId" , "RoleName" FROM role_master WHERE "SecurityLevel" &gt; :smallRole]]&gt;    &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{'smallRole' : attributes.queryParams.userroleid}]]]&gt;   &lt;/db:input-parameters&gt; 
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="c8b8c517-c85d-4dbb-a50f-d90b9071cca8"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload]]&gt;  &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_mainRoleFlow">
+            <div class="page-header">
+                <h1>mainRoleFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/mainRoleFlow.png" usemap="#flowMapmainRoleFlow" alt="mainRoleFlow image">
+                <map name="flowMapmainRoleFlow">
+                                                                                                                                                    </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_mainRoleFlowxml_code">
+                  Show configuration XML code of the flow mainRoleFlow...
+                </a>
+              </div>
+              <div id="_mainRoleFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="mainRoleFlow" doc:id="966c8905-b024-4b87-bd85-61484e7e46c1"&gt;  
+    &lt;choice doc:name="Choice" doc:id="81c4fbce-c99a-4111-ab11-843cfa4dcf55"&gt; 
+        &lt;when expression="#[attributes.queryParams.userId != null]"&gt; 
+            &lt;flow-ref doc:name="getRoleIdFromUserId" doc:id="dafab1e5-eddc-45fa-9cb1-15143a48353d" name="getRoleIdFromUserId"/&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;flow-ref doc:name="getAllRoles" doc:id="9e0fc3bc-d670-45dc-8e91-e64367f5e1e1" name="getAllRoles"/&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                    </section>
+                  <section id="_createNewRole">
+            <div class="page-header">
+                <h1>createNewRole <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/createNewRole.png" usemap="#flowMapcreateNewRole" alt="createNewRole image">
+                <map name="flowMapcreateNewRole">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_createNewRolexml_code">
+                  Show configuration XML code of the flow createNewRole...
+                </a>
+              </div>
+              <div id="_createNewRolexml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="createNewRole" doc:id="b2090f43-5d49-41e1-be9e-9fac461f16ca"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="5dc359a0-1f56-435c-9edc-0bbf5bb935da" variableName="backup_payload"/&gt;  
+    &lt;flow-ref doc:name="generateNewId" doc:id="6e70f7bd-bdbb-45b9-94c9-e703afa8141c" name="generateNewId"/&gt;  
+    &lt;set-variable value="#[%dw 2.0
+output application/json
+---
+vars.backup_payload default{} ++ {&amp;quot;roleId&amp;quot; : payload.nextval}]" doc:name="Reset backup_payload" doc:id="28e7c06d-16ef-48b1-9243-ebc73c7fcc17" variableName="backup_payload"/&gt;
+    &lt;try doc:name="Try" doc:id="98399c19-11e8-4e76-a229-7bab8e6936bf"&gt; 
+        &lt;db:insert doc:name="Role_Master Insert" doc:id="fb18b09a-befb-4b41-af74-53cb93c16617" config-ref="rdbms_master_db_config"&gt;  
+            &lt;db:sql&gt;&lt;![CDATA[INSERT INTO role_master ("RoleId", "RoleName", "SecurityLevel") VALUES (:roleid , :rolename , :securitylevel)]]&gt;   &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "roleid" : vars.backup_payload.roleId,
+
+    "rolename" : vars.backup_payload.roleName,
+
+    "securitylevel" : vars.backup_payload.securityLevel
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:insert&gt; 
+    &lt;/try&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="c8a00454-bc27-4a84-8abc-6b1666c16f3d"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+                  <section id="_updateRoleFlow">
+            <div class="page-header">
+                <h1>updateRoleFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/updateRoleFlow.png" usemap="#flowMapupdateRoleFlow" alt="updateRoleFlow image">
+                <map name="flowMapupdateRoleFlow">
+                                                                                                                                                                                          </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_updateRoleFlowxml_code">
+                  Show configuration XML code of the flow updateRoleFlow...
+                </a>
+              </div>
+              <div id="_updateRoleFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="updateRoleFlow" doc:id="b24d008d-800c-4dae-9323-6b96a240098e"&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="86f41625-dd4c-4c7a-9092-08423830f827"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "roleId" : payload.roleId,
+
+    "field" : payload.field,
+
+    "fieldValue" : payload.fieldValue
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;set-payload value="#[&amp;quot;UPDATE role_master SET \&amp;quot;&amp;quot; ++ payload.field ++ &amp;quot;\&amp;quot; = '&amp;quot; ++ payload.fieldValue ++ &amp;quot;' WHERE \&amp;quot;RoleId\&amp;quot; = '&amp;quot;++ payload.roleId ++&amp;quot;'&amp;quot;]" doc:name="Set Payload" doc:id="97175176-01e5-4d46-b517-f52e7f9fee2b"/&gt;  
+    &lt;db:update doc:name="Update" doc:id="93a7d0d1-6f2f-43d5-beb4-abc87df949a6" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[#[payload]]]&gt;  &lt;/db:sql&gt; 
+    &lt;/db:update&gt;  
+    &lt;logger level="INFO" doc:name="Logger" doc:id="72e13ebc-91a4-47d9-824e-c0251430914a" message="#[payload]"/&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                              </section>
+                  <section id="_deleteRoleFlow">
+            <div class="page-header">
+                <h1>deleteRoleFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/deleteRoleFlow.png" usemap="#flowMapdeleteRoleFlow" alt="deleteRoleFlow image">
+                <map name="flowMapdeleteRoleFlow">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_deleteRoleFlowxml_code">
+                  Show configuration XML code of the flow deleteRoleFlow...
+                </a>
+              </div>
+              <div id="_deleteRoleFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="deleteRoleFlow" doc:id="8d8b2d37-23de-436b-a200-7a2b05df99be"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set backup_payload" doc:id="bc286c27-7108-42e7-95e2-04f5a273deee" variableName="backup_payload"/&gt;  
+    &lt;db:select doc:name="Select" doc:id="6f7e0413-a7cb-444e-81c9-2088c9db3a52" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM user_master WHERE "RoleId" = :roleid]]&gt;   &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "roleid" : vars.backup_payload.roleId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="ed3ade8c-8cc8-4083-b652-2afd51b99337"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;choice doc:name="Choice" doc:id="d64ee9bd-3a74-4f55-8dee-330dffcd9409"&gt; 
+        &lt;when expression="#[payload.count == 0]"&gt; 
+            &lt;db:delete doc:name="Delete" doc:id="a51ea8ad-b7ad-403b-b577-911c93b90af7" config-ref="rdbms_master_db_config"&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[DELETE FROM role_master WHERE "RoleId" = :roleid]]&gt;    &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "roleid" : vars.backup_payload.roleId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+            &lt;/db:delete&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;ee:transform doc:name="Transform Message" doc:id="df2cbd2a-e160-4179-9876-a47c57cf0c81"&gt;  
+                &lt;ee:message&gt; 
+                    &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Failed to remove role as some users are associated with Role. Please change ROles of associated users and try again"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                &lt;/ee:message&gt; 
+            &lt;/ee:transform&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+              </div>
+    </div>
+  </div>
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with <a href="http://www.mulesoft.com/mule-studio/" target="_blank">Anypoint Studio</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blogs.mulesoft.org/">Read the blog</a></li>
+          <li><a href="http://www.mulesoft.org/jira/browse/">Submit issues</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/widgets.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script src="assets/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap-affix.js"></script>
+    <script src="assets/scroller.js"></script>
+    <script src="assets/application.js"></script>
+
+</body>
+</html>

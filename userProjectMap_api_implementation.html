@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>laniak-core-api · Anypoint Studio Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <link href="assets/prettify.css" rel="stylesheet">
+    <link href="assets/scroller.css" rel="stylesheet">
+
+  </head>
+
+  <body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar"><iframe style="display: none;" id="rufous-sandbox" name="uid13460061790411"></iframe>
+
+    <!-- Navbar
+    ================================================== -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand pull-left" href="#">laniak-core-api</a>
+          <p class="navbar-text pull-right">
+              <a href="http://www.mulesoft.com" class="navbar-link">
+                <img src="./assets/images/mulesoft-logo-final.png" alt="MuleSoft" id="mulesoftlogo">
+              </a>
+          </p>
+          <div class="scroller scroller-left"><img src="./assets/icons/glyphicons_chevron-left.png" alt="scrollLeft"></div>
+          <div class="scroller scroller-right"><img src="./assets/icons/glyphicons_chevron-right.png" alt="scrollRight"></div>
+          <div class="wrapper">
+            <ul class="nav nav-tabs list" id="myTab">
+                                                                    <li><a href="./index.html">module_api_implementation</a></li>
+                                                                                                            <li><a href="./user_api_implementation.html">user_api_implementation</a></li>
+                                                                                                              <li><a href="./typeProjectMap_api_implementation.html">typeProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./moduleProjectMap_api_implementation.html">moduleProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./task_api_implementation.html">task_api_implementation</a></li>
+                                                                                                              <li class="active"><a href="./userProjectMap_api_implementation.html">userProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./role_api_implementation.html">role_api_implementation</a></li>
+                                                                                                              <li><a href="./common.html">common</a></li>
+                                                                                                              <li><a href="./interface.html">interface</a></li>
+                                                                                                              <li><a href="./priorityProjectMap_api_implementation.html">priorityProjectMap_api_implementation</a></li>
+                                                                                                              <li><a href="./global.html">global</a></li>
+                                                                                                              <li><a href="./type_api_implementation.html">type_api_implementation</a></li>
+                                                                                                              <li><a href="./priority_api_implementation.html">priority_api_implementation</a></li>
+                                                                                                              <li><a href="./project_api_implementation.html">project_api_implementation</a></li>
+                                                                                                              <li><a href="./activityworkflow_api_implementation.html">activityworkflow_api_implementation</a></li>
+                                                                </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>laniak-core-api</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="nav-header">Flows</li>
+                      <li data-toggle="collapse" data-target="#_createNewUserProjectMapNav"><a href="#_createNewUserProjectMap"><i class="icon-chevron-right"></i> createNewUserProjectMap</a>
+            </li>
+            <div id="_createNewUserProjectMapNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_updateUserProjectMapFlowNav"><a href="#_updateUserProjectMapFlow"><i class="icon-chevron-right"></i> updateUserProjectMapFlow</a>
+            </li>
+            <div id="_updateUserProjectMapFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                              </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_deleteUserProjectMapFlowNav"><a href="#_deleteUserProjectMapFlow"><i class="icon-chevron-right"></i> deleteUserProjectMapFlow</a>
+            </li>
+            <div id="_deleteUserProjectMapFlowNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                                                                                                                                                                                                                                      </ul>
+              </div>
+            </div>
+                  </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Elements and their descriptions
+        ================================================== -->
+        <div style="max-height: 640px;width:100%;overflow:auto;">
+                      <img src="img/userProjectMap_api_implementation.png" usemap="#mFlowMap" alt="Mule Configuration Image">
+            <map name="mFlowMap">
+                                                                                                                                                                                                                                                                                                                                                                                                                </map>
+                  </div>
+        <!--Mule configuration xml code-->
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapseMuleConfiguration">
+            Show Mule Configuration XML code...
+          </a>
+        </div>
+        <div id="collapseMuleConfiguration" class="accordion-body collapse" style="height: 0px;">
+          <div class="accordion-inner">
+              <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd"&gt;
+    &lt;flow name="createNewUserProjectMap" doc:id="953c0990-a66d-4ad6-912f-32d663ec3c03"&gt; 
+        &lt;ee:transform doc:name="Prepare payload" doc:id="8601a3ba-6f28-43bc-b004-84fd4601f324"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "userId" : payload.userId,
+
+    "projectId" : payload.projectId
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;db:insert doc:name="User_Project_Map Insert" doc:id="ec350ba6-8d01-483b-8ff8-ff45f3752e9d" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[INSERT INTO user_project_map ("UserId" , "ProjectId") VALUES (:userid , :projectid)]]&gt; &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : vars.backup_payload.userId,
+
+    "projectid" : vars.backup_payload.projectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:insert&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="updateUserProjectMapFlow" doc:id="b4f84bfc-b1bc-4aa1-975c-41f9ba6f772e"&gt; 
+        &lt;ee:transform doc:name="Prepare Payload" doc:id="1f1f01f0-4487-443c-aeec-f8628ee26dc1"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "userId" : payload.userId,
+
+    "oldProjectId" : payload.oldProjectId,
+
+    "newProjectId" : payload.newProjectId
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;db:update doc:name="Update" doc:id="cb5478d1-a06d-4c6a-8d6d-4cefd49c7dbb" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[UPDATE user_project_map SET "ProjectId" = :newprojectid WHERE "UserId" = :userid AND "ProjectId" = :oldprojectid]]&gt;    &lt;/db:sql&gt;  
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : payload.userId,
+
+    "oldprojectid" : payload.oldProjectId,
+
+    "newprojectid" : payload.newProjectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:update&gt; 
+    &lt;/flow&gt;  
+    &lt;flow name="deleteUserProjectMapFlow" doc:id="a0e86a55-4999-4a3d-a75e-f19a06cc57ef"&gt; 
+        &lt;set-variable value="#[payload]" doc:name="Set Variable" doc:id="85a0d485-c036-4bab-82d5-3e3765f28e0b" variableName="backup_payload"/&gt;  
+        &lt;db:select doc:name="Select" doc:id="727e5e17-8a42-4e26-9b97-ae05b8cfb27b" config-ref="rdbms_master_db_config"&gt; 
+            &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM user_project_map WHERE "UserId" = :userid AND "ProjectId"     &lt;&gt; :projectid
+
+
+
+]]&gt; &lt;/db:sql&gt;
+            &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : vars.backup_payload.userId,
+
+    "projectid" : vars.backup_payload.projectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+        &lt;/db:select&gt;  
+        &lt;ee:transform doc:name="Transform Message" doc:id="c488003c-f1ac-49ef-8260-e7a119d7b32c"&gt; 
+            &lt;ee:message&gt; 
+                &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+            &lt;/ee:message&gt; 
+        &lt;/ee:transform&gt;  
+        &lt;choice doc:name="Choice" doc:id="bf6acd14-b498-4fbb-97ed-e06e42bf37fd"&gt; 
+            &lt;when expression="#[payload.count &amp;gt; 0]"&gt; 
+                &lt;db:delete doc:name="Delete" doc:id="82399576-f3ee-4b74-a29a-8bb137961d48" config-ref="rdbms_master_db_config"&gt; 
+                    &lt;db:sql&gt;&lt;![CDATA[DELETE FROM user_project_map WHERE "UserId" = :userid AND "ProjectId" = :projectid]]&gt;  &lt;/db:sql&gt;  
+                    &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : vars.backup_payload.userId,
+
+    "projectid" : vars.backup_payload.projectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+                &lt;/db:delete&gt; 
+            &lt;/when&gt;  
+            &lt;otherwise&gt; 
+                &lt;ee:transform doc:name="Transform Message" doc:id="a1d7dda5-e64f-45a9-98a2-94ef9600cab4"&gt; 
+                    &lt;ee:message&gt; 
+                        &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Please map specified to any other project before deleting current mapping"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                    &lt;/ee:message&gt; 
+                &lt;/ee:transform&gt; 
+            &lt;/otherwise&gt; 
+        &lt;/choice&gt; 
+    &lt;/flow&gt; 
+&lt;/mule&gt;
+</code></pre>
+
+          </div>
+        </div>
+
+                  <section id="_createNewUserProjectMap">
+            <div class="page-header">
+                <h1>createNewUserProjectMap <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/createNewUserProjectMap.png" usemap="#flowMapcreateNewUserProjectMap" alt="createNewUserProjectMap image">
+                <map name="flowMapcreateNewUserProjectMap">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_createNewUserProjectMapxml_code">
+                  Show configuration XML code of the flow createNewUserProjectMap...
+                </a>
+              </div>
+              <div id="_createNewUserProjectMapxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="createNewUserProjectMap" doc:id="953c0990-a66d-4ad6-912f-32d663ec3c03"&gt;  
+    &lt;ee:transform doc:name="Prepare payload" doc:id="8601a3ba-6f28-43bc-b004-84fd4601f324"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "userId" : payload.userId,
+
+    "projectId" : payload.projectId
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;db:insert doc:name="User_Project_Map Insert" doc:id="ec350ba6-8d01-483b-8ff8-ff45f3752e9d" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[INSERT INTO user_project_map ("UserId" , "ProjectId") VALUES (:userid , :projectid)]]&gt; &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : vars.backup_payload.userId,
+
+    "projectid" : vars.backup_payload.projectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+    &lt;/db:insert&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_updateUserProjectMapFlow">
+            <div class="page-header">
+                <h1>updateUserProjectMapFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/updateUserProjectMapFlow.png" usemap="#flowMapupdateUserProjectMapFlow" alt="updateUserProjectMapFlow image">
+                <map name="flowMapupdateUserProjectMapFlow">
+                                                                                                              </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_updateUserProjectMapFlowxml_code">
+                  Show configuration XML code of the flow updateUserProjectMapFlow...
+                </a>
+              </div>
+              <div id="_updateUserProjectMapFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="updateUserProjectMapFlow" doc:id="b4f84bfc-b1bc-4aa1-975c-41f9ba6f772e"&gt;  
+    &lt;ee:transform doc:name="Prepare Payload" doc:id="1f1f01f0-4487-443c-aeec-f8628ee26dc1"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "userId" : payload.userId,
+
+    "oldProjectId" : payload.oldProjectId,
+
+    "newProjectId" : payload.newProjectId
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;db:update doc:name="Update" doc:id="cb5478d1-a06d-4c6a-8d6d-4cefd49c7dbb" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[UPDATE user_project_map SET "ProjectId" = :newprojectid WHERE "UserId" = :userid AND "ProjectId" = :oldprojectid]]&gt;    &lt;/db:sql&gt;  
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : payload.userId,
+
+    "oldprojectid" : payload.oldProjectId,
+
+    "newprojectid" : payload.newProjectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+    &lt;/db:update&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                          </section>
+                  <section id="_deleteUserProjectMapFlow">
+            <div class="page-header">
+                <h1>deleteUserProjectMapFlow <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/deleteUserProjectMapFlow.png" usemap="#flowMapdeleteUserProjectMapFlow" alt="deleteUserProjectMapFlow image">
+                <map name="flowMapdeleteUserProjectMapFlow">
+                                                                                                                                                                                                                                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_deleteUserProjectMapFlowxml_code">
+                  Show configuration XML code of the flow deleteUserProjectMapFlow...
+                </a>
+              </div>
+              <div id="_deleteUserProjectMapFlowxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="deleteUserProjectMapFlow" doc:id="a0e86a55-4999-4a3d-a75e-f19a06cc57ef"&gt;  
+    &lt;set-variable value="#[payload]" doc:name="Set Variable" doc:id="85a0d485-c036-4bab-82d5-3e3765f28e0b" variableName="backup_payload"/&gt;  
+    &lt;db:select doc:name="Select" doc:id="727e5e17-8a42-4e26-9b97-ae05b8cfb27b" config-ref="rdbms_master_db_config"&gt;  
+        &lt;db:sql&gt;&lt;![CDATA[SELECT COUNT(*) FROM user_project_map WHERE "UserId" = :userid AND "ProjectId"     &lt;&gt; :projectid
+
+
+
+]]&gt; &lt;/db:sql&gt;
+        &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : vars.backup_payload.userId,
+
+    "projectid" : vars.backup_payload.projectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+    &lt;/db:select&gt;  
+    &lt;ee:transform doc:name="Transform Message" doc:id="c488003c-f1ac-49ef-8260-e7a119d7b32c"&gt;  
+        &lt;ee:message&gt; 
+            &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+payload[0]]]&gt;   &lt;/ee:set-payload&gt;
+        &lt;/ee:message&gt; 
+    &lt;/ee:transform&gt;  
+    &lt;choice doc:name="Choice" doc:id="bf6acd14-b498-4fbb-97ed-e06e42bf37fd"&gt; 
+        &lt;when expression="#[payload.count &amp;gt; 0]"&gt; 
+            &lt;db:delete doc:name="Delete" doc:id="82399576-f3ee-4b74-a29a-8bb137961d48" config-ref="rdbms_master_db_config"&gt;  
+                &lt;db:sql&gt;&lt;![CDATA[DELETE FROM user_project_map WHERE "UserId" = :userid AND "ProjectId" = :projectid]]&gt;  &lt;/db:sql&gt;  
+                &lt;db:input-parameters&gt;&lt;![CDATA[#[{
+
+    "userid" : vars.backup_payload.userId,
+
+    "projectid" : vars.backup_payload.projectId
+
+}]]]&gt;   &lt;/db:input-parameters&gt;
+            &lt;/db:delete&gt; 
+        &lt;/when&gt;  
+        &lt;otherwise&gt; 
+            &lt;ee:transform doc:name="Transform Message" doc:id="a1d7dda5-e64f-45a9-98a2-94ef9600cab4"&gt;  
+                &lt;ee:message&gt; 
+                    &lt;ee:set-payload&gt;&lt;![CDATA[%dw 2.0
+
+output application/json
+
+---
+
+{
+
+    "message" : "Please map specified to any other project before deleting current mapping"
+
+}]]&gt;    &lt;/ee:set-payload&gt;
+                &lt;/ee:message&gt; 
+            &lt;/ee:transform&gt; 
+        &lt;/otherwise&gt; 
+    &lt;/choice&gt; 
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p></p>
+            </div>
+                                                                                                                                                                                  </section>
+              </div>
+    </div>
+  </div>
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with <a href="http://www.mulesoft.com/mule-studio/" target="_blank">Anypoint Studio</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blogs.mulesoft.org/">Read the blog</a></li>
+          <li><a href="http://www.mulesoft.org/jira/browse/">Submit issues</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/widgets.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script src="assets/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap-affix.js"></script>
+    <script src="assets/scroller.js"></script>
+    <script src="assets/application.js"></script>
+
+</body>
+</html>
